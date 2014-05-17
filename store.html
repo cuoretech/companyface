@@ -146,9 +146,9 @@
 	</section>
 	<section>
 		<div class="container-fluid">
-		    <div id="custom_carousel" class="tabs tabs_default">
+		    <div id="custom_carousel">
 		        <!-- Wrapper for slides -->
-		        <div class="carousel-inner">
+		        <div class="tabs tabs_default carousel-inner">
 		            <div class="item active" id="tab-1">
 		                <div class="container-fluid">
 		                    <div class="row">
@@ -288,6 +288,78 @@
 		<p style="text-align:center">Items in Your Cart</p>
 	</section>
 	<section id="cart">
+		<div class="container">
+			<div class="row">
+		        <div class="span12">
+		    		<div class="" id="loginModal">
+		              <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		                <h3>Have an Account?</h3>
+		              </div>
+		              <div class="modal-body">
+		                <div class="well">
+		                  <ul class="nav nav-tabs">
+		                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+		                    <li><a href="#create" data-toggle="tab">Create Account</a></li>
+		                  </ul>
+		                  <div id="myTabContent" class="tab-content">
+		                    <div class="tab-pane active in" id="login">
+		                      <form class="form-horizontal" action='' method="POST">
+		                        <fieldset>
+		                          <div id="legend">
+		                            <legend class="">Login</legend>
+		                          </div>    
+		                          <div class="control-group">
+		                            <!-- Username -->
+		                            <label class="control-label"  for="username">Username</label>
+		                            <div class="controls">
+		                              <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+		                            </div>
+		                          </div>
+		     
+		                          <div class="control-group">
+		                            <!-- Password-->
+		                            <label class="control-label" for="password">Password</label>
+		                            <div class="controls">
+		                              <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+		                            </div>
+		                          </div>
+		     
+		     
+		                          <div class="control-group">
+		                            <!-- Button -->
+		                            <div class="controls">
+		                              <button class="btn btn-success">Login</button>
+		                            </div>
+		                          </div>
+		                        </fieldset>
+		                      </form>                
+		                    </div>
+		                    <div class="tab-pane fade" id="create">
+		                      <form id="tab">
+		                        <label>Username</label>
+		                        <input type="text" value="" class="input-xlarge">
+		                        <label>First Name</label>
+		                        <input type="text" value="" class="input-xlarge">
+		                        <label>Last Name</label>
+		                        <input type="text" value="" class="input-xlarge">
+		                        <label>Email</label>
+		                        <input type="text" value="" class="input-xlarge">
+		                        <label>Address</label>
+		                        <textarea value="Smith" rows="3" class="input-xlarge">
+		                        </textarea>
+		     
+		                        <div>
+		                          <button class="btn btn-primary">Create Account</button>
+		                        </div>
+		                      </form>
+		                    </div>
+		                </div>
+		              </div>
+		            </div>
+		        </div>
+			</div>
+		</div>
 		<div class="container block" style="padding-bottom:30px;">
 		    <div class="row" id="#alan">
 		    <div class="stepwizard">
@@ -406,23 +478,16 @@
 		</div>
 		<div class="container">
 	<div class="row">
-		<div class="col-sm-8">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<div class="panel-title">
+		<div class="col-sm-12">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-8">
 								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-4">
 								<button type="button" class="btn btn-primary btn-sm btn-block">
 									<span class="glyphicon glyphicon-share-alt"></span> Login or Register
 								</button>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel-body">
 					<div class="row">
 						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/100x70">
 						</div>
@@ -430,10 +495,10 @@
 							<h4 class="product-name"><strong>Product name</strong></h4><h4><small>Product description</small></h4>
 						</div>
 						<div class="col-sm-6">
-							<div class="col-sm-6 text-right">
+							<div class="col-sm-8 text-right">
 								<h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
 							</div>
-							<div class="col-sm-4">
+							<div class="col-sm-2">
 								<input type="text" class="form-control input-sm" value="1">
 							</div>
 							<div class="col-sm-2">
@@ -454,8 +519,13 @@
 							<div class="col-sm-6 text-right">
 								<h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
 							</div>
-							<div class="col-sm-4">
+							<div class="col-sm-2">
 								<input type="text" class="form-control input-sm" value="1">
+							</div>
+							<div class="col-sm-2">
+								<button type="button" class="btn btn-link btn-sm">
+									<span class="glyphicon glyphicon-trash"> </span>
+								</button>
 							</div>
 							<div class="col-sm-2">
 								<button type="button" class="btn btn-link btn-sm">
@@ -477,8 +547,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="panel-footer">
 					<div class="row text-center">
 						<div class="col-sm-9">
 							<h4 class="text-right">Total <strong>$50.00</strong></h4>
@@ -487,7 +555,6 @@
 							<button type="button" class="btn btn-success btn-block">
 								Checkout
 							</button>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -505,7 +572,7 @@
 
 	          <!-- Text input-->
 	          <div class="form-group">
-	            <label class="col-sm-2 control-label" for="textinput">Line 1</label>
+	            <label class="col-sm-2 control-label" type="text">Line 1</label>
 	            <div class="col-sm-10">
 	              <input type="text" placeholder="Address Line 1" class="form-control">
 	            </div>
@@ -513,7 +580,7 @@
 
 	          <!-- Text input-->
 	          <div class="form-group">
-	            <label class="col-sm-2 control-label" for="textinput">Line 2</label>
+	            <label class="col-sm-2 control-label" type="text">Line 2</label>
 	            <div class="col-sm-10">
 	              <input type="text" placeholder="Address Line 2" class="form-control">
 	            </div>
@@ -521,7 +588,7 @@
 
 	          <!-- Text input-->
 	          <div class="form-group">
-	            <label class="col-sm-2 control-label" for="textinput">City</label>
+	            <label class="col-sm-2 control-label" type="text">City</label>
 	            <div class="col-sm-10">
 	              <input type="text" placeholder="City" class="form-control">
 	            </div>
@@ -529,12 +596,12 @@
 
 	          <!-- Text input-->
 	          <div class="form-group">
-	            <label class="col-sm-2 control-label" for="textinput">State</label>
+	            <label class="col-sm-2 control-label" type="text">State</label>
 	            <div class="col-sm-4">
 	              <input type="text" placeholder="State" class="form-control">
 	            </div>
 
-	            <label class="col-sm-2 control-label" for="textinput">Postcode</label>
+	            <label class="col-sm-2 control-label" type="text">Postcode</label>
 	            <div class="col-sm-4">
 	              <input type="text" placeholder="Post Code" class="form-control">
 	            </div>

@@ -18,7 +18,7 @@ Cuore CompanyFace currently does not have any documention; however, we will answ
 Authors
 ===========
 
-Cuore CompanyFace is made available by Cuore Technology and a team of contributors.
+Cuore CompanyFace is made available by [Cuore Technology](http://cuore.io) and a team of contributors.
 
 -----------------------
 
@@ -26,6 +26,8 @@ Cuore CompanyFace is made available by Cuore Technology and a team of contributo
 *   UI Designer: [Tanner Jourdian](https://github.com/)
 *   Backend Developer: [Bryan Clark](https://github.com/BryanDClark)
 *   Backend Developer: [Akshay Gadegone](https://github.com/AkshayGadegone)
+*   Backend Developer: [Guilherme Carvalho](https://github.com/guigacarvalho)
+*   Backend Developer: [Vivek Bharathij](https://github.com/vivekbharathij)
 
 Architecture
 ===========
