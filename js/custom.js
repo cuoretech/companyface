@@ -59,11 +59,8 @@ $(document).ready(function() {
   });
 
   //Alan Preview
-      $('#custom_carousel').on('slide.bs.carousel', function (evt) {
-        $('#custom_carousel .controls li.active').removeClass('active');
-        $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-      });
-
+  $('.tabs').tabslet();
+  
   //Handles menu drop down
     $('.dropdown-menu').find('form').click(function (e) {
         e.stopPropagation();
