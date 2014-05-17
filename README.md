@@ -32,7 +32,7 @@ Cuore CompanyFace is made available by [Cuore Technology](http://cuore.io) and a
 Architecture
 ===========
 
-UI Framework: Bootstrap 3.0 and JQuery 1.10
-Web Framework: Pylons Pyramid
-Database: Neo4j
-Templating Engine: Mako Templates
+##UI Framework: Bootstrap 3.0 and JQuery 1.10
+##Web Framework: Pylons Pyramid
+##Database: Neo4j
+##Templating Engine: Mako Templates

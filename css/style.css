@@ -2022,6 +2022,20 @@ form .btn {
 .hor-buffer{
 	margin: 20px 0px;
 }
+/* ==== Stripe ==== */
+input.invalid {
+      border: 2px solid red;
+}
+
+.validation.failed:after {
+      color: red;
+      content: 'Validation failed';
+}
+
+.validation.passed:after {
+      color: green;
+      content: 'Validation passed';
+}
 
 /* ==== Thumbs ==== */
 ul.thumbnail{
@@ -2189,3 +2203,7 @@ ul.thumbnail{
 }
 
 #login-nav input { margin-bottom: 15px; }
+
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
