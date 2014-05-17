@@ -60,7 +60,7 @@ $(document).ready(function() {
 
   //Alan Preview
   $('.tabs').tabslet();
-  
+
   //Handles menu drop down
     $('.dropdown-menu').find('form').click(function (e) {
         e.stopPropagation();
@@ -82,6 +82,14 @@ $(document).ready(function() {
   }
 });
 
+$(function(){
+  $('div.product-chooser').not('.disabled').find('div.product-chooser-item').on('click', function(){
+    $(this).parent().parent().find('div.product-chooser-item').removeClass('selected');
+    $(this).addClass('selected');
+    $(this).find('input[type="radio"]').prop("checked", true);
+    
+  });
+});
 
 $(window).load(function() {
   'use strict';
