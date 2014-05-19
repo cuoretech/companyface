@@ -1,7 +1,11 @@
 Cuore CompanyFace
 ===========
 
+###The Face of Cuore Technology
+
 This repository is used for the design and development of Cuore Technology's brand. The repo consists of the main website, company store and other branding files. Since Cuore is an open source and transparent company we provide these materials to the world. We ask you respect our trademarks and brand, but feel free to fork our branch us and contribute to our branding.
+
+![alt text](http://cuore.io/img/front/logo.png "Cuore Logo")
 
 -----------------------
 
@@ -32,7 +36,7 @@ Cuore CompanyFace is made available by [Cuore Technology](http://cuore.io) and a
 Architecture
 ===========
 
-##UI Framework: Bootstrap 3.0 and JQuery 1.10
-##Web Framework: Pylons Pyramid
-##Database: Neo4j
-##Templating Engine: Mako Templates
+####UI Framework: Bootstrap 3.0 and JQuery 1.10
+####Web Framework: Pylons Pyramid
+####Database: Neo4j
+####Templating Engine: Mako Templates
