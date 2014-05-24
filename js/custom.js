@@ -28,6 +28,16 @@ $(document).ready(function() {
   //responsive embed videos
   $('.video').fitVids();
 
+  //Device Holder
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+
   //make intro carousel height of window
   $('#carousel_intro .item').css({'height': ($(window).height()) + 'px'});
   $(window).resize(function() {
