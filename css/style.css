@@ -544,6 +544,10 @@ textarea:focus, input:focus, a:focus, *:focus {
 #intro{
 	background-color: #222;
 }
+.buffer{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
 .top-buffer{
 	margin-top: 80px;
 }
@@ -2123,22 +2127,22 @@ ul.thumbnail{
     padding: 0px;
 	position: relative;
 	overflow: hidden;
-	height: 200px;
+	height: 300px;
 }
 .cuadro_intro_hover:hover .caption{
 	opacity: 1;
-	transform: translateY(-200px);
-	-webkit-transform:translateY(-200px);
-	-moz-transform:translateY(-200px);
-	-ms-transform:translateY(-200px);
-	-o-transform:translateY(-200px);
+	transform: translateY(-300px);
+	-webkit-transform:translateY(-300px);
+	-moz-transform:translateY(-300px);
+	-ms-transform:translateY(-300px);
+	-o-transform:translateY(-300px);
 }
 .cuadro_intro_hover img{
 	z-index: 4;
 }
 .cuadro_intro_hover .caption{
 	position: absolute;
-	top:200px;
+	top:300px;
 	-webkit-transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-o-transition:all 0.3s ease-in-out;
@@ -2294,7 +2298,7 @@ div.bhoechie-tab-container{
   z-index: 10;
   padding: 0 !important;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 15px;
   background-clip: padding-box;
   opacity: 0.97;
   filter: alpha(opacity=97);
