@@ -552,6 +552,15 @@ textarea:focus, input:focus, a:focus, *:focus {
 	margin-top: 80px;
 }
 
+.sm-top-buffer{
+	margin-top: 40px;
+}
+
+.sm-buffer{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
 .bottom-buffer{
 	margin-bottom: 80px;
 }
@@ -2609,4 +2618,20 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 }
 .media-testimony i.fb:hover{
 	background:#2f62b6;
+}
+/* Account */
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
 }
