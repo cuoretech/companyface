@@ -26,7 +26,6 @@
 	    <meta content='Cuore' name='twitter:title'>
 	    <meta content='Cuore, the next big technology innovation!' name='twitter:description'>
 	    <meta content='http://cuore.io/img/thumbnail.png' name='twitter:image'>
-	    
 	    <!-- for Apple iOS -->
 	    <link rel="shortcut icon" href="http://cuore.io/img/thumbnail.png" />
 	    <link rel="apple-touch-icon" href="http://cuore.io/img/thumbnail.png" />
@@ -52,11 +51,41 @@
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 		<script src="js/jquery.payment.js"></script>
-		<script type="text/javascript">
-		  // This identifies your website in the createToken call below
-		  Stripe.setPublishableKey('pk_test_aMLfjYjMU7J233NCdfwFUMTf');
-	  	</script>
-	  	<script>
+		  <script type="text/javascript">
+		    // This identifies your website in the createToken call below
+		    Stripe.setPublishableKey('pk_test_aMLfjYjMU7J233NCdfwFUMTf');
+		 
+		    var stripeResponseHandler = function(status, response) {
+		      var $form = $('#payment-form');
+		 
+		      if (response.error) {
+		        // Show the errors on the form
+		        $form.find('.payment-errors').text(response.error.message);
+		        $form.find('button').prop('disabled', false);
+		      } else {
+		        // token contains id, last4, and card type
+		        var token = response.id;
+		        // Insert the token into the form so it gets submitted to the server
+		        $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+		        // and re-submit
+		        $form.get(0).submit();
+		      }
+		    };
+		 
+		    jQuery(function($) {
+		      $('#payment-form').submit(function(e) {
+		        var $form = $(this);
+		 
+		        // Disable the submit button to prevent repeated clicks
+		        $form.find('button').prop('disabled', true);
+		 
+		        Stripe.card.createToken($form, stripeResponseHandler);
+		 
+		        // Prevent the form from submitting with the default action
+		        return false;
+		      });
+		    });
+
 		    $(function($){
 		      $('[data-numeric]').payment('restrictNumeric');
 		      $('.cc-number').payment('formatCardNumber');
@@ -80,7 +109,7 @@
 		          $('.validation').addClass('passed');
 		        }
 		      });
-		    });
+		  	});
 		  </script>
 			<!-- Analytics -->
 		<script>
@@ -630,13 +659,13 @@
 	        <div class="col-lg-12 col-sm-12 bhoechie-tab-container">
 	            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
 	              <div class="list-group">
-	                <a href="#" class="list-group-item active text-center">
+	                <a href="#" class="list-group-item active text-center" style="backgroud-color:none;">
 	                  <h4 class="glyphicon glyphicon-plane"></h4><br/>Flight
 	                </a>
-	                <a href="#" class="list-group-item text-center">
+	                <a href="#" class="list-group-item text-center" style="backgroud-color:none;">
 	                  <h4 class="glyphicon glyphicon-road"></h4><br/>Train
 	                </a>
-	                <a href="#" class="list-group-item text-center">
+	                <a href="#" class="list-group-item text-center" style="backgroud-color:none;">
 	                  <h4 class="glyphicon glyphicon-home"></h4><br/>Hotel
 	                </a>
 	              </div>
@@ -1632,11 +1661,12 @@
     <div class="row">
         <div class="col-sm-12 col-lg-6">
                     <h3 class="panel-title">Payment Details</h3>
-                    <form class="pay" name="pay" action="" method="post">
+                    <form class="pay" id="payment-form" action="" method="post">
+                    <span class="payment-errors"></span>
                     <div class="form-group">
                         <label for="cardNumber">CARD NUMBER</label>
                         <div class="input-group">
-							<input id="cardNumber" type="text" class="cc-number form-control" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
+							<input id="cardNumber" type="text" class="cc-number form-control" size="20" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" data-stripe="number"required>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
                         </div>
                     </div>
@@ -1647,16 +1677,16 @@
                                 <label for="expityMonth">EXPIRY DATE</label>
                                 </div>
                                 <div class="col-offset-2 col-sm-4 col-lg-4 pl-ziro">
-                                    <input type="text" class="cc-exp form-control" id="expityMonth" pattern="\d*" placeholder="MM" required />
+                                    <input type="text" class="cc-exp form-control" id="expityMonth" size="2" placeholder="MM" pattern="\d*" data-stripe="exp-month" required />
                                 </div>
                                 <div class="col-sm-4 col-lg-4 pl-ziro">
-                                    <input type="text" class="cc-exp form-control" id="expityYear" pattern="\d*" placeholder="YY" required /></div>
+                                    <input type="text" class="cc-exp form-control" id="expityYear" size="4" placeholder="YYYY" pattern="\d*" data-stripe="exp-year" required /></div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-lg-4 pull-right">
                             <div class="form-group">
                                 <label for="cvCode">CV CODE</label>
-                                <input  id="cvCode" type="password" class="cc-cvc form-control" pattern="\d*" x-autocompletetype="cc-csc" placeholder="CV" required  autocomplete="off">
+                                <input  id="cvCode" type="password" class="cc-cvc form-control" size="3" pattern="\d*" x-autocompletetype="cc-csc" placeholder="CV" data-stripe="cvc" required  autocomplete="off">
                             </div>
                         </div>
                         <button class="btn btn-success btn-lg btn-block" type="submit" name="pay">Pay</button>
