@@ -2214,6 +2214,13 @@ ul.thumbnail{
     position: relative;
 }
 
+.lamelink>li a{
+	color: #00bb00 !important;
+}
+.lamelink>li a:hover{
+	color: #999 !important;
+}
+
 .btn-circle {
   width: 30px;
   height: 30px;

@@ -1642,7 +1642,7 @@
 		    		<div class="" id="loginModal">
 		              </div>
 		              <div class="modal-body">
-		                  <ul class="nav nav-tabs">
+		                  <ul class="nav nav-tabs lamelink">
 		                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
 		                    <li><a href="#create" data-toggle="tab">Create Account</a></li>
 		                  </ul>
@@ -1653,45 +1653,44 @@
 		                          <div id="legend">
 		                            <legend class="">Login</legend>
 		                          </div>    
-		                          <div class="control-group">
-		                            <!-- Username -->
-		                            <label class="control-label"  for="Email">Email</label>
-		                            <div class="controls">
-		                              <input type="text" id="Email" name="Email" placeholder="" class="input-xlarge">
-		                            </div>
-		                          </div>
-		                          <div class="control-group">
-		                            <!-- Password-->
-		                            <label class="control-label" for="password">Password</label>
-		                            <div class="controls">
-		                              <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-		                            </div>
-		                          </div>
-		                          <div class="control-group">
-		                            <!-- Button -->
-		                            <div class="controls">
-		                              <button type="submit" name="login" class="btn btn-success">Login</button>
-		                            </div>
-		                          </div>
+						          <!-- Email -->
+						          <div class="form-group">
+						            <label class="col-sm-2 control-label" type="text">Email</label>
+						            <div class="col-sm-4">
+						              <input type="text" name="email" class="form-control">
+						            </div>
+						          </div>
+						          <!-- Text input-->
+						          <div class="form-group">
+						            <label class="col-sm-2 control-label" type="text">Password</label>
+						            <div class="col-sm-4">
+						              <input type="password" name="password" class="form-control">
+						            </div>
+						          </div>
+						          <div class="form-group">
+						            <div class="col-sm-6">
+						              <div class="pull-right">
+										<button type="submit" name="login" class="btn btn-primary">Login</button>
+						              </div>
+						            </div>
+						          </div>
 		                        </fieldset>
 		                      </form>                
 		                    </div>
 		                    <div class="tab-pane fade" id="create">
 		                    <div class="row">
 		                    <div class="col-sm-10 col-sm-offset-2">
-		                      <form id="tab" name="register" action="" method="post">
+		                      <form id="tab" class="form-horizontal" name="register" action="" method="post">
 						        <fieldset>
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">First Name</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="text" name="First Name" class="form-control">
 						            </div>
-						          </div>
-						          <!-- Text input-->
-						          <div class="form-group">
+
 						            <label class="col-sm-2 control-label" type="text">Last Name</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="text" name="Last Name" class="form-control">
 						            </div>
 						          </div>
@@ -1705,14 +1704,12 @@
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">Password</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="password" name="Password" class="form-control">
 						            </div>
-						          </div>
-						          <!-- Text input-->
-						          <div class="form-group">
+
 						            <label class="col-sm-2 control-label" type="text">Confirm Password</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="password" name="Password2" class="form-control">
 						            </div>
 						          </div>
@@ -1782,7 +1779,7 @@
 		    		<div class="" id="accountModal">
 		              </div>
 		              <div class="modal-body">
-		                  <ul class="nav nav-tabs">
+		                  <ul class="nav nav-tabs lamelink">
 		                    <li class="active"><a href="#accountInfo" data-toggle="tab">Account Info</a></li>
 		                    <li><a href="#editAccount" data-toggle="tab">Edit Info</a></li>
 		                  </ul>
@@ -1801,19 +1798,19 @@
 		                    <div class="tab-pane fade" id="editAccount">
 		                    <div class="row">
 		                    <div class="col-sm-10 col-sm-offset-2">
-		                      <form id="tab" name="editInfo" action="" method="post">
+		                      <form id="tab" class="form-horizontal" name="editInfo" action="" method="post">
 						        <fieldset>
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">First Name</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="text" name="First Name" class="form-control">
 						            </div>
 						          </div>
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">Last Name</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="text" name="Last Name" class="form-control">
 						            </div>
 						          </div>
@@ -1827,14 +1824,14 @@
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">Password</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="password" name="Password" class="form-control">
 						            </div>
 						          </div>
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">Confirm Password</label>
-						            <div class="col-sm-10">
+						            <div class="col-sm-4">
 						              <input type="password" name="Password2" class="form-control">
 						            </div>
 						          </div>
