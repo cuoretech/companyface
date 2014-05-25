@@ -555,6 +555,9 @@ textarea:focus, input:focus, a:focus, *:focus {
 .sm-top-buffer{
 	margin-top: 40px;
 }
+.sm-bottom-buffer{
+	margin-bottom:40px;
+}
 
 .sm-buffer{
 	margin-top:40px;
