@@ -773,7 +773,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary">Add to Cart</button>
+							<button type="submit" class="btn btn-primary" name="Phone">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -786,7 +786,7 @@
 			<img src="http://placehold.it/150x150" alt="Product">
 			</div>
 			<div class="col-lg-6">
-		    <h2>Configure your Desktop Television</h2>
+		    <h2>Configure your Accessorie</h2>
 		    </div>
 		    </div>
 		    <div class="col-offset-2 col-lg-12">
@@ -881,7 +881,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary">Add to Cart</button>
+							<button type="submit" class="btn btn-primary" name="Accessories">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -1042,7 +1042,7 @@
 							<div class="form-group">
 								<div class="col-sm-10">
 								<div class="pull-right">
-									<button type="submit" class="btn btn-primary">Add to Cart</button>
+									<button type="submit" class="btn btn-primary" name="Speakers">Add to Cart</button>
 								</div>
 								</div>
 							</div>
@@ -1291,7 +1291,7 @@
 								<input type="text" class="form-control input-sm" value="${cartItem[1]}">
 							</div>
 							<div class="col-sm-2">
-								<h4><strong><span class="text-muted">= </span>   ${int(cartItem[3])*int(cartItem[1])}).00</strong></h4>
+								<h4><strong><span class="text-muted">= </span>   ${int(cartItem[3])*int(cartItem[1])}.00</strong></h4>
 							</div>
 							<div class="col-sm-2">
 								<a href="#">Remove</a>
@@ -1562,7 +1562,7 @@
 	</div>
 	</section>
 	<!--end cart section-->
-	<section>
+	<section tal:condition="python:not logged_in">
 			<div class="container">
 			<div class="row">
 		        <div class="col-lg-12">
@@ -1699,7 +1699,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section tal:condition="python:not logged_in">
 	<div class="container">
 		<div class="row">
 		        <div class="col-lg-12">
