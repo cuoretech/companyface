@@ -517,8 +517,7 @@
 							</div>
 			</div>
 		    <div class="row">
-				% for product in products:
-		        <div class="col-lg-3">
+		        <div class="col-lg-3" tal:repeat="product products">
 		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
 								<p style="text-align:center; margin-top:20px;">
 									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
@@ -526,15 +525,14 @@
 								<div class="caption">
 									<div class="blur"></div>
 									<div class="caption-text">
-										<h3 style="padding:10px;">${product.name}</h3>
-										<p>${product.price}</p>
-										<p>${product.description}</p>
-										<button type="submit" class="btn btn-default" name="${product.name}">Buy</button>
+										<h3 style="padding:10px;">${product['name']}</h3>
+										<p>${product['price']}</p>
+										<p>${product['description']}</p>
+										<button type="submit" class="btn btn-default" name="${product['pid']}">Buy</button>
 									</div>
 								</div>
 							</div>
 			    </div>
-				% endfor
 		    </div>
 	<div class="row">
 	        <div class="col-lg-12 col-sm-12 bhoechie-tab-container">
