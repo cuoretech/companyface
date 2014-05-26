@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Cuore - Sync your world</title>
+        <script type="text/javascript" tal:condition="python:error_occured">alert("${message}");</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta content="index, follow" name="robots">
 		<!--Set the descritpion of you site-->
@@ -96,7 +97,7 @@
 	            <div class="col-lg-12">
 	            	<div>
 		                <div class="col-lg-6 text-left page-header"><h3 style="font-size:24px;margin-top:-11px;">Cuore Store</h3></div>
-					<div class="col-lg-6 text-right page-header"><h3 style="font-size:14px;margin-top:0;">1.800.555.7777 | <a href="#login" tal:condition="python:not logged_in">Login</a><a href="#logout" tal:condition="python:logged_in">Logout</a>| <a href="#cart">Cart</a></h3></div>
+					<div class="col-lg-6 text-right page-header"><h3 style="font-size:14px;margin-top:0;">1.800.555.7777 | <a href="#login" tal:condition="python:not logged_in">Login</a><a href="/logout" tal:condition="python:logged_in">Logout</a>| <a href="#cart">Cart</a></h3></div>
 	                </div>
 	            </div>
 	            <div class="col-sm-2 text-center">
@@ -141,7 +142,6 @@
 	</section>
 	<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 		<h1>ALAN</h1>
-		<a href="#">Buy Now</a>
 	</section>
 	<section>
 		<div class="container-fluid">
@@ -418,7 +418,6 @@
 		    </section>
 	<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 				<h1>lusciOS Devices</h1>
-				<a href="#">Buy Now</a>
 	</section>
 	<section>
 			<div class="container buffer">
@@ -519,73 +518,7 @@
 							</div>
 			</div>
 		    <div class="row">
-		    	<div class="col-lg-3">
-		    				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-								<p style="text-align:center; margin-top:20px;">
-									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
-								</p>
-								<div class="caption">
-									<div class="blur"></div>
-									<div class="caption-text">
-										<h3 style="padding:10px;">THIS IS H3</h3>
-										<p>Price</p>
-										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
-									</div>
-								</div>
-							</div>
-						
-			    </div>
-		        <div class="col-lg-3">
-		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-								<p style="text-align:center; margin-top:20px;">
-									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
-								</p>
-								<div class="caption">
-									<div class="blur"></div>
-									<div class="caption-text">
-										<h3 style="padding:10px;">THIS IS H3</h3>
-										<p>Price</p>
-										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
-									</div>
-								</div>
-							</div>
-						
-			    </div>
-		        <div class="col-lg-3">
-		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-								<p style="text-align:center; margin-top:20px;">
-									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
-								</p>
-								<div class="caption">
-									<div class="blur"></div>
-									<div class="caption-text">
-										<h3 style="padding:10px;">THIS IS H3</h3>
-										<p>Price</p>
-										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
-									</div>
-								</div>
-							</div>
-						
-			    </div>
-		        <div class="col-lg-3">
-		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-								<p style="text-align:center; margin-top:20px;">
-									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
-								</p>
-								<div class="caption">
-									<div class="blur"></div>
-									<div class="caption-text">
-										<h3 style="padding:10px;">THIS IS H3</h3>
-										<p>Price</p>
-										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
-									</div>
-								</div>
-							</div>
-			    </div>
+
 		    </div>
 	<div class="row">
 	        <div class="col-lg-12 col-sm-12 bhoechie-tab-container">
@@ -841,7 +774,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary">Add to Cart</button>
+							<button type="submit" class="btn btn-primary" name="Phone">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -854,7 +787,7 @@
 			<img src="http://placehold.it/150x150" alt="Product">
 			</div>
 			<div class="col-lg-6">
-		    <h2>Configure your Desktop Television</h2>
+		    <h2>Configure your Accessorie</h2>
 		    </div>
 		    </div>
 		    <div class="col-offset-2 col-lg-12">
@@ -949,7 +882,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary">Add to Cart</button>
+							<button type="submit" class="btn btn-primary" name="Accessories">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -959,7 +892,6 @@
 	</section>
 			<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 				<h1>Sol Speakers</h1>
-				<a href="#">Buy Now</a>
 			</section>
 			<section>
 			<div class="container-fluid">
@@ -1111,7 +1043,7 @@
 							<div class="form-group">
 								<div class="col-sm-10">
 								<div class="pull-right">
-									<button type="submit" class="btn btn-primary">Add to Cart</button>
+									<button type="submit" class="btn btn-primary" name="Speakers">Add to Cart</button>
 								</div>
 								</div>
 							</div>
@@ -1135,9 +1067,9 @@
 		    </section>
 	<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 				<h1>Accessories</h1>
-				<a href="#">Buy Now</a>
 	</section>
 	<section>
+		<form name="cart" action="" method="post">
 		<div class="container buffer">
 		    <div class="row">
 		    <div class="col-lg-5" style="padding-left: 0px;padding-right: 0px;">
@@ -1309,11 +1241,11 @@
 		    </div>
 		</div>
 	</section>
-	<section id="apps-top" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
+	<section id="apps-top" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;" tal:condition="python:logged_in">
 		<h1>Shopping Cart</h1>
 		<p style="text-align:center">Items in Your Cart</p>
 	</section>
-	<section id="cart">
+	<section id="cart" tal:condition="python:logged_in">
 		<div class="container block" style="padding-bottom:30px;">
 		    <div class="row">
 		    <div class="stepwizard">
@@ -1346,21 +1278,21 @@
 									<span class="glyphicon glyphicon-share-alt"></span> Login or Register
 								</button>
 							</div>
-					<div class="row">
+					<div class="row" tal:repeat="cartItem cart">
 						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
 						</div>
 						<div class="col-sm-4">
-							<h4 class="product-name"><strong>Product name</strong></h4><h4><small>Product description</small></h4>
+							<h4 class="product-name"><strong>${cartItem[0]}</strong></h4><h4><small>${cartItem[2]}</small></h4>
 						</div>
 						<div class="col-sm-6">
 							<div class="col-sm-6 text-right">
-								<h4><strong>25.00   <span class="text-muted">x</span></strong></h4>
+								<h4><strong>${cartItem[3]}  <span class="text-muted">x</span></strong></h4>
 							</div>
 							<div class="col-sm-2">
-								<input type="text" class="form-control input-sm" value="1">
+								<input type="text" class="form-control input-sm" value="${cartItem[1]}">
 							</div>
 							<div class="col-sm-2">
-								<h4><strong><span class="text-muted">= </span>   25.00</strong></h4>
+								<h4><strong><span class="text-muted">= </span>   ${int(cartItem[3])*int(cartItem[1])}.00</strong></h4>
 							</div>
 							<div class="col-sm-2">
 								<a href="#">Remove</a>
@@ -1631,7 +1563,7 @@
 	</div>
 	</section>
 	<!--end cart section-->
-	<section>
+	<section tal:condition="python:not logged_in">
 			<div class="container">
 			<div class="row">
 		        <div class="col-lg-12">
@@ -1768,7 +1700,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section tal:condition="python:not logged_in">
 	<div class="container">
 		<div class="row">
 		        <div class="col-lg-12">
