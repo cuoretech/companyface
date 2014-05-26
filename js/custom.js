@@ -68,9 +68,6 @@ $(document).ready(function() {
     });
   });
 
-  //Alan Preview
-  $('.tabs').tabslet();
-
   //Handles menu drop down
     $('.dropdown-menu').find('form').click(function (e) {
         e.stopPropagation();

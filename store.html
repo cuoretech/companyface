@@ -172,19 +172,21 @@
 											<i class="icon-group skrollable skrollable-after" data-bottom-center="font-size: 0px;" data-center-top="font-size: 52px;" style="font-size: 52px;"></i>
 										</div>
 										<div class="col-lg-10 col-sm-10">
-											<a href="#" class="btn btn-more btn-mini">More</a>
+											<a href="#">
 											<h3>Made for Everyone</h3>
 											<h5>Packed with Features</h5>
 											<p><small>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes and an advanced grid system.</small></p>
+											</a>
 										</div>
 										<div class="col-lg-2 col-sm-2">
 											<i class="icon-flag skrollable skrollable-after" data-bottom-center="font-size: 0px;" data-center-top="font-size: 52px;" style="font-size: 52px;"></i>
 										</div>
 										<div class="col-lg-10 col-sm-10">
-											<a href="#" class="btn btn-more btn-mini">More</a>
+											<a href="#">
 											<h3>Tons of Components</h3>
 											<h5>Add any, fast and easy</h5>
 											<p><small>Dozens of reusable components built to provide dropdowns, navigation, alerts, popovers and much more.</small></p>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -969,10 +971,10 @@
 			</section>
 			<section>
 			<div class="container-fluid">
-			    <div id="custom_carousel">
+			    <div id="custom_carousel" class="carousel slide" data-ride="carousel">
 			        <!-- Wrapper for slides -->
-		        	<div class="tabs tabs_default carousel-inner">
-		            <div class="item active" id="tab-1">
+		        	<div class="carousel-inner">
+		            <div class="item active">
 		                <div class="container-fluid">
 							<div class="row">
 								<!--start features #1 -->
@@ -996,26 +998,28 @@
 											<i class="icon-group skrollable skrollable-after" data-bottom-center="font-size: 0px;" data-center-top="font-size: 52px;" style="font-size: 52px;"></i>
 										</div>
 										<div class="col-lg-10 col-sm-10">
-											<a href="#" class="btn btn-more btn-mini">More</a>
+											<a href="#">
 											<h3>Made for Everyone</h3>
 											<h5>Packed with Features</h5>
 											<p><small>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes and an advanced grid system.</small></p>
+											</a>
 										</div>
 										<div class="col-lg-2 col-sm-2">
 											<i class="icon-flag skrollable skrollable-after" data-bottom-center="font-size: 0px;" data-center-top="font-size: 52px;" style="font-size: 52px;"></i>
 										</div>
 										<div class="col-lg-10 col-sm-10">
-											<a href="#" class="btn btn-more btn-mini">More</a>
+											<a href="#">
 											<h3>Tons of Components</h3>
 											<h5>Add any, fast and easy</h5>
 											<p><small>Dozens of reusable components built to provide dropdowns, navigation, alerts, popovers and much more.</small></p>
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 		                </div>            
 		            </div> 
-		            <div class="item" id="tab-2">
+		            <div class="item">
 		                <div class="container-fluid">
 							<div class="row">
 								<div class="col-lg-6 video">
@@ -1031,7 +1035,7 @@
 							</div>
 		                </div>            
 		            </div> 
-		            <div class="item" id="tab-3">
+		            <div class="item">
 		                <div class="container-fluid">
 							<div class="row">
 							<div class="col-lg-6">
@@ -1071,7 +1075,7 @@
 						</div>
 		                </div>           
 		            </div> 
-		            <div class="item" id="tab-4">
+		            <div class="item">
 						<div class="container top-buffer">
 							<div class="row">
 							<div class="col-offset-2 col-lg-4">
@@ -1128,10 +1132,10 @@
 		        <!-- End Carousel Inner -->
 		        <div class="controls">
 		            <ul class="nav">
-		                <li class="active"><a href="#tab-1"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-		                <li><a href="#tab-2"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-		                <li><a href="#tab-3"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-		                <li><a href="#tab-4"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
+		                <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
+		                <li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
+		                <li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
+		                <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
 		            </ul>
 		        </div>
 		    </div>
@@ -1776,7 +1780,7 @@
 	<div class="container">
 		<div class="row">
 		        <div class="col-lg-12">
-		    		<div class="" id="accountModal">
+		    		<div id="accountModal">
 		              </div>
 		              <div class="modal-body">
 		                  <ul class="nav nav-tabs lamelink">
@@ -1804,21 +1808,21 @@
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">First Name</label>
 						            <div class="col-sm-4">
-						              <input type="text" name="First Name" class="form-control">
+						              <input type="text" name="firstName" class="form-control">
 						            </div>
 						          </div>
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">Last Name</label>
 						            <div class="col-sm-4">
-						              <input type="text" name="Last Name" class="form-control">
+						              <input type="text" name="lastName" class="form-control">
 						            </div>
 						          </div>
 						          <!-- Text input-->
 						          <div class="form-group">
 						            <label class="col-sm-2 control-label" type="text">Email</label>
 						            <div class="col-sm-10">
-						              <input type="text" name="Email Address" class="form-control">
+						              <input type="text" name="Email" class="form-control">
 						            </div>
 						          </div>
 						          <!-- Text input-->
