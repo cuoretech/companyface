@@ -1352,10 +1352,10 @@
 					</div>
 					<div class="row text-center">
 						<div class="col-sm-9">
-							<h4 class="text-right">Total <strong>$50.00</strong></h4>
+							<h4 class="text-right">Total <strong>$${total}.00</strong></h4>
 						</div>
 						<div class="col-sm-3">
-							<button type="button" class="btn btn-success btn-block" name="Checkout">
+							<button type="button" class="btn btn-success btn-block" tal:condition="python:logged_in" name="Checkout">
 								Checkout
 							</button>
 					</div>
