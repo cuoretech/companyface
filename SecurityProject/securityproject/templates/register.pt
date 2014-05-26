@@ -1,0 +1,10 @@
+<h1>${message}</h1>
+<form method="post" action="">
+  Email: 
+  <input type="text" id="email" name="email"><br>
+  Password:
+  <input type="password" id="password" name="password"><br>
+  Re-enter password:
+  <input type="password" id="password2" name="password2"><br>
+  <button type="submit"  name="register">Register</button>
+</form>

@@ -1,0 +1,2 @@
+<p tal:condition="python:success">Account successfully validated, click <a href="https://dev.cuore.io">here</a> to log in.</p>
+<p tal:condition="python:not success">Invalid verification code received</p>
