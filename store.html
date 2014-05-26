@@ -1273,10 +1273,10 @@
 							<div class="col-sm-8">
 								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
 							</div>
-							<div class="col-sm-4">
-								<button type="button" class="btn btn-primary btn-sm btn-block">
+							<div class="col-sm-4" tal:condition="python:not logged_in">
+								<a href="#login"  class="btn btn-primary btn-sm btn-block">
 									<span class="glyphicon glyphicon-share-alt"></span> Login or Register
-								</button>
+								</a>
 							</div>
 					<div class="row" tal:repeat="cartItem cart">
 						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
