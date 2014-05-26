@@ -1352,7 +1352,7 @@
 					</div>
 					<div class="row text-center">
 						<div class="col-sm-9">
-							<h4 class="text-right">Total <strong>$${total}.00</strong></h4>
+							<h4 class="text-right">Total <strong>$${int(total)}.00</strong></h4>
 						</div>
 						<div class="col-sm-3">
 							<button type="button" class="btn btn-success btn-block" tal:condition="python:logged_in" name="Checkout">
@@ -1636,7 +1636,7 @@
 			</div>
 		</div>
 	</section>
-	<section tal:condition="python:not logged_in">
+	<section tal:condition="python:False">
 	<div class="container">
 		<div class="row">
 		        <div class="col-lg-12">
