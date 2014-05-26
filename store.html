@@ -1083,6 +1083,7 @@
 				<h1>Accessories</h1>
 	</section>
 	<section>
+		<form name="cart" action="" method="post">
 		<div class="container buffer">
 		    <div class="row">
 		    <div class="col-lg-5" style="padding-left: 0px;padding-right: 0px;">
@@ -1291,21 +1292,21 @@
 									<span class="glyphicon glyphicon-share-alt"></span> Login or Register
 								</button>
 							</div>
-					<div class="row">
+					<div class="row" tal:repeat="cartItem session">
 						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
 						</div>
 						<div class="col-sm-4">
-							<h4 class="product-name"><strong>Product name</strong></h4><h4><small>Product description</small></h4>
+							<h4 class="product-name"><strong>${cartItem['name']}</strong></h4><h4><small>${cartItem['description']}</small></h4>
 						</div>
 						<div class="col-sm-6">
 							<div class="col-sm-6 text-right">
-								<h4><strong>25.00   <span class="text-muted">x</span></strong></h4>
+								<h4><strong>${cartItem['price']}  <span class="text-muted">x</span></strong></h4>
 							</div>
 							<div class="col-sm-2">
-								<input type="text" class="form-control input-sm" value="1">
+								<input type="text" class="form-control input-sm" value="${cartItem['qtd']}">
 							</div>
 							<div class="col-sm-2">
-								<h4><strong><span class="text-muted">= </span>   25.00</strong></h4>
+								<h4><strong><span class="text-muted">= </span>   ${cartItem['price']*cartItem['qtd']}.00</strong></h4>
 							</div>
 							<div class="col-sm-2">
 								<a href="#">Remove</a>
