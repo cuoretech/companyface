@@ -1335,8 +1335,7 @@
 							<div class="col-sm-1 text-left"><a href="#">Remove</a></div>
 							</div>
 						</div>
- -->
- 					</div>
+ 					</div>-->
 					<hr>
 					<div class="row">
 						<div class="text-center">
@@ -1355,7 +1354,7 @@
 							<h4 class="text-right">Total <strong>$${int(total)}.00</strong></h4>
 						</div>
 						<div class="col-sm-3">
-							<button type="button" class="btn btn-success btn-block" tal:condition="python:logged_in" name="Checkout">
+							<button type="button" class="btn btn-success btn-block" tal:condition="python:False" name="Checkout">
 								Checkout
 							</button>
 					</div>
@@ -1463,7 +1462,7 @@
     <div class="row">
         <div class="col-sm-12 col-lg-6">
                     <h3 class="panel-title">Payment Details</h3>
-                    <form class="pay" id="payment-form" action="" method="post">
+                    <form class="pay" id="payment-form" name="payment" action="" method="post">
                     <span class="payment-errors"></span>
                     <div class="form-group">
                         <label for="cardNumber">CARD NUMBER</label>
