@@ -498,7 +498,7 @@
 								</li>
 							</ul>
 						</div>
-			<div class="row" tal:condition="python:False">
+			<div class="row">
 							<div class="col-lg-6 col-sm-6">
 								<i class="icon-refresh skrollable skrollable-between" data-bottom-center="font-size: 0px;" data-center-top="font-size: 52px;" style="font-size: 45.714285714285715px;"></i>
 								<h3>Rearrange layout</h3>
@@ -1308,11 +1308,7 @@
 		<p style="text-align:center">Items in Your Cart</p>
 	</section>
 	<section id="cart">
-<<<<<<< HEAD
 		<div class="container block" style="padding-bottom:30px;">
-=======
-<!-- 		<div class="container block" style="padding-bottom:30px;">
->>>>>>> FETCH_HEAD
 		    <div class="row">
 		    <div class="stepwizard">
 			    <div class="stepwizard-row">
@@ -1332,17 +1328,17 @@
 			</div>
 			</div>
 		</div>
- -->		<div class="container">
+		<div class="container">
 		<div class="row">
 			<form name="cart" action="" method="post">
 						<div class="row">
 							<div class="col-sm-8">
 								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
 							</div>
-							<div class="col-sm-4" tal:condition="python:not logged_in">
-								<a href="#login"  class="btn btn-primary btn-sm btn-block">
+							<div class="col-sm-4">
+								<button type="button" class="btn btn-primary btn-sm btn-block">
 									<span class="glyphicon glyphicon-share-alt"></span> Login or Register
-								</a>
+								</button>
 							</div>
 					<div class="row">
 						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
@@ -1364,7 +1360,7 @@
 								<a href="#">Remove</a>
 							</div>
 						</div>
-<!-- 						<div class="col-offset-2 col-sm-10">
+						<div class="col-offset-2 col-sm-10">
 						<div class="col-sm-5">
 						<h3>Features</h3>
 						<ul>
@@ -1401,7 +1397,66 @@
 							<div class="col-sm-1 text-left"><a href="#">Remove</a></div>
 							</div>
 						</div>
- 					</div>-->
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
+						</div>
+						<div class="col-sm-4">
+							<h4 class="product-name"><strong>Product name</strong></h4><h4><small>Product description</small></h4>
+						</div>
+						<div class="col-sm-6">
+							<div class="col-sm-6 text-right">
+								<h4><strong>25.00   <span class="text-muted">x</span></strong></h4>
+							</div>
+							<div class="col-sm-2">
+								<input type="text" class="form-control input-sm" value="1">
+							</div>
+							<div class="col-sm-2">
+								<h4><strong><span class="text-muted">= </span>   25.00</strong></h4>
+							</div>
+							<div class="col-sm-2">
+								<a href="#">Remove</a>
+							</div>
+						</div>
+						<div class="col-offset-2 col-sm-10">
+						<div class="col-sm-5">
+						<h3>Features</h3>
+						<ul>
+							<li>Feature1</li>
+							<li>Feature2</li>
+							<li>Feature3</li>
+							<li>Feature4</li>
+						</ul>
+						</div>
+						<div class="col-sm-5">
+						<h3>Includes</h3>
+						<ul>
+							<li>$speakerType and $quantity</li>
+							<li>$speakerType and $quantity</li>
+							<li>$speakerType and $quantity</li>
+							<li>$speakerType and $quantity</li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-offset-2 col-sm-10">
+						<h3>Accessories</h3>
+							<div class="col-sm-10" style="margin-top:10px;">
+							<div class="col-sm-2"><img src="http://placehold.it/50x50" alt="Item Picture" style="width: 50px;height: 50px"></div>
+							<div class="col-sm-7">$accessName</div>
+							<div class="col-sm-1 text-left">$accessPrice</div>
+							<div class="col-sm-7">$accessDescription</div>
+							<div class="col-sm-1 text-left"><a href="#">Remove</a></div>
+							</div>
+							<div class="col-sm-10" style="margin-top:10px;">
+							<div class="col-sm-2"><img src="http://placehold.it/50x50" alt="Item Picture" style="width: 50px;height: 50px"></div>
+							<div class="col-sm-7">$accessName</div>
+							<div class="col-sm-1 text-left">$accessPrice</div>
+							<div class="col-sm-7">$accessDescription</div>
+							<div class="col-sm-1 text-left"><a href="#">Remove</a></div>
+							</div>
+						</div>
+					</div>
 					<hr>
 					<div class="row">
 						<div class="text-center">
@@ -1417,18 +1472,18 @@
 					</div>
 					<div class="row text-center">
 						<div class="col-sm-9">
-							<h4 class="text-right">Total <strong>$${int(total)}.00</strong></h4>
+							<h4 class="text-right">Total <strong>$50.00</strong></h4>
 						</div>
 						<div class="col-sm-3">
-							<button type="button" class="btn btn-success btn-block" tal:condition="python:True" name="clear">
-								Clear the Cart
+							<button type="button" class="btn btn-success btn-block">
+								Checkout
 							</button>
 					</div>
 				</div>
 			</div>
 			</form>
 			</div>
-<!-- 	<div class="container">
+	<div class="container">
 		<div id="saved-address" class="row form-group product-chooser">
 		<form name="ship" action="" method="post">
 		<div class="col-sm-12 col-lg-3 product-chooser-item selected">
@@ -1458,16 +1513,18 @@
 				<button type="submit" class="btn btn-primary">Ship to Address</button>
 			</div>
 			</div>
-		</div> 
+		</div>
 		</form>
-		</div>-->
-<!-- 		<div class="row">
+		</div>
+		<div class="row">
 	    <div class="col-lg-8 col-lg-offset-2">
 	      <form class="form-horizontal" name="shipping" action="" method="post">
 	        <fieldset>
 
+	          <!-- Form Name -->
 	          <h3>Shipping Address</h3>
 
+	          <!-- Text input-->
 	          <div class="form-group">
 	            <label class="col-sm-2 control-label" type="text">Line 1</label>
 	            <div class="col-sm-10">
@@ -1475,6 +1532,7 @@
 	            </div>
 	          </div>
 
+	          <!-- Text input-->
 	          <div class="form-group">
 	            <label class="col-sm-2 control-label" type="text">Line 2</label>
 	            <div class="col-sm-10">
@@ -1482,6 +1540,7 @@
 	            </div>
 	          </div>
 
+	          <!-- Text input-->
 	          <div class="form-group">
 	            <label class="col-sm-2 control-label" type="text">City</label>
 	            <div class="col-sm-10">
@@ -1489,6 +1548,7 @@
 	            </div>
 	          </div>
 
+	          <!-- Text input-->
 	          <div class="form-group">
 	            <label class="col-sm-2 control-label" type="text">State</label>
 	            <div class="col-sm-4">
@@ -1503,6 +1563,7 @@
 
 
 
+	          <!-- Text input-->
 	          <div class="form-group">
 	            <label class="col-sm-2 control-label" type="text">Country</label>
 	            <div class="col-sm-10">
@@ -1521,14 +1582,14 @@
 
 	        </fieldset>
 	      </form>
-	    </div>
-	</div>-->
- 	</div>
-	<div class="container" tal:condition="python:logged_in">
+	    </div><!-- /.col-lg-12 -->
+	</div><!-- /.row -->
+	</div>
+	<div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-6">
                     <h3 class="panel-title">Payment Details</h3>
-                    <form class="pay" id="payment-form" name="payment" action="" method="post">
+                    <form class="pay" id="payment-form" action="" method="post">
                     <span class="payment-errors"></span>
                     <div class="form-group">
                         <label for="cardNumber">CARD NUMBER</label>
@@ -1701,11 +1762,7 @@
 			</div>
 		</div>
 	</section>
-<<<<<<< HEAD
 	<section>
-=======
-	<section tal:condition="python:False">
->>>>>>> FETCH_HEAD
 	<div class="container">
 		<div class="row">
 		        <div class="col-lg-12">
@@ -1825,7 +1882,7 @@
 		            </div>
 		        </div>
 			</div>
-	    <!-- <div class="row">
+	    <div class="row">
 	        <div class="col-lg-12">
 	    		<div class="invoice-title">
 	    			<h2>My Orders</h2>
@@ -1849,8 +1906,8 @@
 	    			</div>
 	    		</div>
 	    	</div>
-	    </div> -->
-		<!-- <div class="row">
+	    </div>
+		<div class="row">
 		<div class="col-lg-12 sm-top-buffer">
 	    <div class="invoice-title">
 	    	<h2>My Orders</h2>
@@ -1872,6 +1929,7 @@
 	                                </tr>
 	    						</thead>
 	    						<tbody>
+	    							<!-- foreach ($order->lineItems as $line) or some such thing here -->
 	    							<tr>
 	    								<td>BS-200</td>
 	    								<td class="text-center">$10.99</td>
@@ -1914,8 +1972,8 @@
 	    			</div>
 	    		</div>
 	    	</div>
-	    </div> -->
-<!-- 		<div class="row">
+	    </div>
+		<div class="row">
 	        <div class="col-lg-12">
 	    		<hr>
 	    		<div class="row">
@@ -1936,8 +1994,8 @@
 	    			</div>
 	    		</div>
 	    	</div>
-	    </div> -->
-	    <!-- <div class="row">
+	    </div>
+	    <div class="row">
 	    	<div class="col-lg-12 sm-bottom-buffer">
 	    		<div class="panel-default">
 	    			<div>
@@ -1955,6 +2013,7 @@
 	                                </tr>
 	    						</thead>
 	    						<tbody>
+	    							<!-- foreach ($order->lineItems as $line) or some such thing here -->
 	    							<tr>
 	    								<td>BS-200</td>
 	    								<td class="text-center">$10.99</td>
@@ -1997,7 +2056,7 @@
 	    			</div>
 	    		</div>
 	    	</div>
-	    </div> -->
+	    </div>
 	</div>
 	</section>
 	<section id="footMenu">
