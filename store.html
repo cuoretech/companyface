@@ -77,7 +77,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a href="#intro" class="navbar-brand"><img class="img-responsive" src="img/mainLogo.png" alt=""></a>
-				<div class="nav-collapse collapse navbar-responsive-collapse">
+				<div tal:condition="python:False" class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav pull-right">
 						<li class="active"><a href="#intro">Home</a></li>
 						<li><a href="http://store.cuore.io">Store</a></li>
@@ -1532,7 +1532,7 @@
                     <div class="form-group">
                         <label for="cardNumber">CARD NUMBER</label>
                         <div class="input-group">
-							<input id="cardNumber" type="text" class="cc-number form-control" size="20" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" data-stripe="number"required>
+							<input id="cardNumber" type="text" class="cc-number form-control" size="20" x-autocompletetype="cc-number" placeholder="Card number" data-stripe="number"required>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
                         </div>
                     </div>
@@ -1543,10 +1543,10 @@
                                 <label for="expityMonth">EXPIRY DATE</label>
                                 </div>
                                 <div class="col-offset-2 col-sm-4 col-lg-4 pl-ziro">
-                                    <input type="text" class="cc-exp form-control" id="expityMonth" size="2" placeholder="MM" pattern="\d*" data-stripe="exp-month" required />
+                                    <input type="text" class="form-control" id="expityMonth" size="2" placeholder="MM" pattern="\d*" data-stripe="exp-month" required />
                                 </div>
                                 <div class="col-sm-4 col-lg-4 pl-ziro">
-                                    <input type="text" class="cc-exp form-control" id="expityYear" size="4" placeholder="YYYY" pattern="\d*" data-stripe="exp-year" required /></div>
+                                    <input type="text" class="form-control" id="expityYear" size="4" placeholder="YYYY" pattern="\d*" data-stripe="exp-year" required /></div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-lg-4 pull-right">
