@@ -76,7 +76,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a href="#intro" class="navbar-brand"><img class="img-responsive" src="img/mainLogo.png" alt=""></a>
-				<div tal:condition="python:False" class="nav-collapse collapse navbar-responsive-collapse">
+				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav pull-right">
 						<li class="active"><a href="#intro">Home</a></li>
 						<li><a href="http://store.cuore.io">Store</a></li>
@@ -1533,7 +1533,7 @@
                     <div class="form-group">
                         <label for="cardNumber">CARD NUMBER</label>
                         <div class="input-group">
-							<input type="text" size="20" id="cardNumber" class="cc-number form-control" x-autocompletetype="cc-number" placeholder="Card number" data-stripe="number"required>
+							<input type="text" size="20" id="cardNumber" class="cc-number form-control" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" data-stripe="number"required>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
                         </div>
                     </div>
