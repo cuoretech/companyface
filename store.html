@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<title>Cuore - Sync your world</title>
-        <script type="text/javascript" tal:condition="python:error_occured">alert("${message}");</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta content="index, follow" name="robots">
 		<!--Set the descritpion of you site-->
@@ -97,44 +96,44 @@
 	            <div class="col-lg-12">
 	            	<div>
 		                <div class="col-lg-6 text-left page-header"><h3 style="font-size:24px;margin-top:-11px;">Cuore Store</h3></div>
-					<div class="col-lg-6 text-right page-header"><h3 style="font-size:14px;margin-top:0;">1.800.555.7777 | <a href="#login" tal:condition="python:not logged_in">Login</a><a href="/logout" tal:condition="python:logged_in">Logout</a>| <a href="#cart">Cart</a></h3></div>
+					<div class="col-lg-6 text-right page-header"><h3 style="font-size:14px;margin-top:0;">1.800.555.7777 | <a href="#login" tal:condition="python:not logged_in">Login</a><a href="#logout" tal:condition="python:logged_in">Logout</a>| <a href="#cart">Cart</a></h3></div>
 	                </div>
 	            </div>
 	            <div class="col-sm-2 text-center">
 	                <a href="#alan">
 	                	<h4>ALAN</h4>
-	                    <img class="img-responsive portfolio-item" src="http://placehold.it/300x300"> 
+	                    <img class="img-responsive portfolio-item" src="img/front/newserver2.jpg"> 
 	                </a>
 	            </div>
 	            <div class="col-sm-2 text-center">
 	                <a href="#tv">
 	                	<h4>Television</h4>
-	                    <img class="img-responsive portfolio-item" src="http://placehold.it/300x300">
+	                    <img class="img-responsive portfolio-item" src="img/front/newtv1.jpg">
 	                    
 	                </a>
 	            </div>
 	            <div class="col-sm-2 text-center">
 	                <a href="#tablet">
 	                	<h4>Tablet</h4>
-	                    <img class="img-responsive portfolio-item" src="http://placehold.it/300x300">
+	                    <img class="img-responsive portfolio-item" src="img/front/newphone1.jpg">
 	                </a>
 	            </div>
 	            <div class="col-sm-2 text-center">
 	                <a href="#phone">
 	                	<h4>Phone</h4>
-	                    <img class="img-responsive portfolio-item" src="http://placehold.it/300x300">
+	                    <img class="img-responsive portfolio-item" src="img/front/newphone1.jpg">
 	                </a>
 	            </div>
 	            <div class="col-sm-2 text-center">
 	                <a href="#sol">
 	                	<h4>Speakers</h4>
-	                    <img class="img-responsive portfolio-item" src="http://placehold.it/300x300">
+	                    <img class="img-responsive portfolio-item" src="img/front/features8.jpg">
 	                </a>
 	            </div>
 	            <div class="col-sm-2 text-center">
 	                <a href="#access">
 	                	<h4>Accessories</h4>
-	                    <img class="img-responsive portfolio-item" src="http://placehold.it/300x300">
+	                    <img class="img-responsive portfolio-item" src="img/front/router.png">
 	                </a>
 	            </div>
 	        </div>
@@ -142,6 +141,7 @@
 	</section>
 	<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 		<h1>ALAN</h1>
+		<a href="#">Buy Now</a>
 	</section>
 	<section>
 		<div class="container-fluid">
@@ -270,7 +270,7 @@
 					                <div class="col-sm-8 col-lg-12">
 					    				<span class="title">Processor 1</span>
 					    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-					    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+					    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 					    			</div>
 					    			<div class="clear"></div>
 					    		</div>
@@ -279,7 +279,7 @@
 					                <div class="col-sm-8 col-lg-12">
 					    				<span class="title">Processor 2</span>
 					    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-					    				<input type="radio" name="opt" value="desktop">
+					    				<input type="radio" name="product" value="desktop">
 					    			</div>
 					    			<div class="clear"></div>
 					    	</div>
@@ -288,7 +288,7 @@
 					                <div class="col-sm-8 col-lg-12">
 					    				<span class="title">Processor 3</span>
 					    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-					    				<input type="radio" name="opt" value="mobile">
+					    				<input type="radio" name="product" value="mobile">
 					    			</div>
 					    			<div class="clear"></div>
 					    	</div>
@@ -302,7 +302,7 @@
 						                <div class="col-sm-8 col-lg-12">
 						    				<span class="title">Processor 1</span>
 						    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-						    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+						    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 						    			</div>
 						    			<div class="clear"></div>
 						    		</div>
@@ -311,7 +311,7 @@
 						                <div class="col-sm-8 col-lg-12">
 						    				<span class="title">Processor 2</span>
 						    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-						    				<input type="radio" name="opt" value="desktop">
+						    				<input type="radio" name="product" value="desktop">
 						    			</div>
 						    			<div class="clear"></div>
 						    	</div>
@@ -320,7 +320,7 @@
 						                <div class="col-sm-8 col-lg-12">
 						    				<span class="title">Processor 3</span>
 						    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-						    				<input type="radio" name="opt" value="mobile">
+						    				<input type="radio" name="product" value="mobile">
 						    			</div>
 						    			<div class="clear"></div>
 						    	</div>
@@ -334,7 +334,7 @@
 							                <div class="col-sm-8 col-lg-12">
 							    				<span class="title">Processor 1</span>
 							    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-							    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+							    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 							    			</div>
 							    			<div class="clear"></div>
 							    		</div>
@@ -343,7 +343,7 @@
 							                <div class="col-sm-8 col-lg-12">
 							    				<span class="title">Processor 2</span>
 							    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-							    				<input type="radio" name="opt" value="desktop">
+							    				<input type="radio" name="product" value="desktop">
 							    			</div>
 							    			<div class="clear"></div>
 							    	</div>
@@ -352,7 +352,7 @@
 							                <div class="col-sm-8 col-lg-12">
 							    				<span class="title">Processor 3</span>
 							    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-							    				<input type="radio" name="opt" value="mobile">
+							    				<input type="radio" name="product" value="mobile">
 							    			</div>
 							    			<div class="clear"></div>
 							    	</div>
@@ -366,7 +366,7 @@
 								                <div class="col-sm-8 col-lg-12">
 								    				<span class="title">Processor 1</span>
 								    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
-								    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+								    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 								    			</div>
 								    			<div class="clear"></div>
 								    		</div>
@@ -375,7 +375,7 @@
 								                <div class="col-sm-8 col-lg-12">
 								    				<span class="title">Processor 2</span>
 								    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-								    				<input type="radio" name="opt" value="desktop">
+								    				<input type="radio" name="product" value="desktop">
 								    			</div>
 								    			<div class="clear"></div>
 								    	</div>
@@ -384,7 +384,7 @@
 								                <div class="col-sm-8 col-lg-12">
 								    				<span class="title">Processor 3</span>
 								    				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
-								    				<input type="radio" name="opt" value="mobile">
+								    				<input type="radio" name="product" value="mobile">
 								    			</div>
 								    			<div class="clear"></div>
 								    	</div>
@@ -418,6 +418,7 @@
 		    </section>
 	<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 				<h1>lusciOS Devices</h1>
+				<a href="#">Buy Now</a>
 	</section>
 	<section>
 			<div class="container buffer">
@@ -433,6 +434,7 @@
 										<h3 style="padding:10px;">THIS IS H3</h3>
 										<p>Price</p>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
 								</div>
@@ -448,6 +450,7 @@
 									<div class="caption-text">
 										<h3 style="padding:10px;">THIS IS H3</h3>
 										<p>Price</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
@@ -518,20 +521,72 @@
 							</div>
 			</div>
 		    <div class="row">
-
+		        <div class="col-lg-4">
+		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+								<p style="text-align:center; margin-top:20px;">
+									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
+								</p>
+								<div class="caption">
+									<div class="blur"></div>
+									<div class="caption-text">
+										<h3 style="padding:10px;">Phone</h3>
+										<p>Starting at $99</p>
+										<p>Longest Battery life on the market.</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
+									</div>
+								</div>
+							</div>
+						
+			    </div>
+		        <div class="col-lg-4">
+		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+								<p style="text-align:center; margin-top:20px;">
+									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
+								</p>
+								<div class="caption">
+									<div class="blur"></div>
+									<div class="caption-text">
+										<h3 style="padding:10px;">Tablet</h3>
+										<p>Starting at $179</p>
+										<p> Engineered to be the fastest mobile device.</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
+									</div>
+								</div>
+							</div>
+						
+			    </div>
+		        <div class="col-lg-4">
+		        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+								<p style="text-align:center; margin-top:20px;">
+									<img src="http://placehold.it/500x400" class="img-responsive" alt="">
+								</p>
+								<div class="caption">
+									<div class="blur"></div>
+									<div class="caption-text">
+										<h3 style="padding:10px;">Television</h3>
+										<p>Starting at $699</p>
+										<p>A thin, light design. Fastest wireless connections available.</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
+									</div>
+								</div>
+							</div>
+			    </div>
 		    </div>
 	<div class="row">
 	        <div class="col-lg-12 col-sm-12 bhoechie-tab-container">
 	            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
 	              <div class="list-group">
 	                <a href="#" class="list-group-item active text-center" style="backgroud-color:none;">
-	                  <h4 class="glyphicon glyphicon-plane"></h4><br/>Flight
+	                  <h2>Tablet</h2><br/>
 	                </a>
 	                <a href="#" class="list-group-item text-center" style="backgroud-color:none;">
-	                  <h4 class="glyphicon glyphicon-road"></h4><br/>Train
+	                  <h2>Phone</h2><br/>
 	                </a>
 	                <a href="#" class="list-group-item text-center" style="backgroud-color:none;">
-	                  <h4 class="glyphicon glyphicon-home"></h4><br/>Hotel
+	                  <h2>Television</h2><br/>
 	                </a>
 	              </div>
 	            </div>
@@ -583,7 +638,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">8 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt1" value="8 inch 4k LED Touch Screen" checked="checked">
+			    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 			    			</div>
 			    			<div class="clear"></div>
 			    		</div>
@@ -591,7 +646,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">12 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt1" value="12 inch 4k LED Touch Screen">
+			    				<input type="radio" name="product" value="desktop">
 			    			</div>
 			    			<div class="clear"></div>
 			    	</div>
@@ -599,7 +654,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">16 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt1" value="16 inch 4k LED Touch Screen">
+			    				<input type="radio" name="product" value="mobile">
 			    			</div>
 			    			<div class="clear"></div>
 			    	</div>
@@ -612,7 +667,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">16GB Flash Memory</span>
-				    				<input type="radio" name="opt2" value="16GB Flash Memory" checked="checked">
+				    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				    			</div>
 				    			<div class="clear"></div>
 				    		</div>
@@ -620,7 +675,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">32GB Flash Memory</span>
-				    				<input type="radio" name="opt2" value="32GB Flash Memory">
+				    				<input type="radio" name="product" value="desktop">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -628,7 +683,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">64GB Flash Memory</span>
-				    				<input type="radio" name="opt2" value="64GB Flash Memory">
+				    				<input type="radio" name="product" value="mobile">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -641,7 +696,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">8 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt3" value="8 Cell Lithium Ion Battery" checked="checked">
+				    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				    			</div>
 				    			<div class="clear"></div>
 				    		</div>
@@ -649,7 +704,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">12 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt3" value="12 Cell Lithium Ion Battery">
+				    				<input type="radio" name="product" value="desktop">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -657,7 +712,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">16 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt3" value="16 Cell Lithium Ion Battery">
+				    				<input type="radio" name="product" value="mobile">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -666,7 +721,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary" name="Laptop">Add to Cart</button>
+							<button type="submit" class="btn btn-primary">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -691,7 +746,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">3x4.5 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+			    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 			    			</div>
 			    			<div class="clear"></div>
 			    		</div>
@@ -699,7 +754,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">4x5.5 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt" value="desktop">
+			    				<input type="radio" name="product" value="desktop">
 			    			</div>
 			    			<div class="clear"></div>
 			    	</div>
@@ -707,7 +762,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">5x6.5 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt" value="mobile">
+			    				<input type="radio" name="product" value="mobile">
 			    			</div>
 			    			<div class="clear"></div>
 			    	</div>
@@ -720,7 +775,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">16GB Flash Memory</span>
-				    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+				    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				    			</div>
 				    			<div class="clear"></div>
 				    		</div>
@@ -728,7 +783,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">32GB Flash Memory</span>
-				    				<input type="radio" name="opt" value="desktop">
+				    				<input type="radio" name="product" value="desktop">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -736,7 +791,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">64GB Flash Memory</span>
-				    				<input type="radio" name="opt" value="mobile">
+				    				<input type="radio" name="product" value="mobile">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -749,7 +804,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">5 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+				    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				    			</div>
 				    			<div class="clear"></div>
 				    		</div>
@@ -757,7 +812,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">8 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt" value="desktop">
+				    				<input type="radio" name="product" value="desktop">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -765,7 +820,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">10 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt" value="mobile">
+				    				<input type="radio" name="product" value="mobile">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -774,7 +829,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary" name="Phone">Add to Cart</button>
+							<button type="submit" class="btn btn-primary">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -787,7 +842,7 @@
 			<img src="http://placehold.it/150x150" alt="Product">
 			</div>
 			<div class="col-lg-6">
-		    <h2>Configure your Accessorie</h2>
+		    <h2>Configure your Desktop Television</h2>
 		    </div>
 		    </div>
 		    <div class="col-offset-2 col-lg-12">
@@ -799,7 +854,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">40 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+			    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 			    			</div>
 			    			<div class="clear"></div>
 			    		</div>
@@ -807,7 +862,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">60 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt" value="desktop">
+			    				<input type="radio" name="product" value="desktop">
 			    			</div>
 			    			<div class="clear"></div>
 			    	</div>
@@ -815,7 +870,7 @@
 			    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 			                <div class="col-sm-8 col-lg-12">
 			    				<span class="title">80 inch 4k LED Touch Screen</span>
-			    				<input type="radio" name="opt" value="mobile">
+			    				<input type="radio" name="product" value="mobile">
 			    			</div>
 			    			<div class="clear"></div>
 			    	</div>
@@ -828,7 +883,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">16GB Flash Memory</span>
-				    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+				    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				    			</div>
 				    			<div class="clear"></div>
 				    		</div>
@@ -836,7 +891,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">32GB Flash Memory</span>
-				    				<input type="radio" name="opt" value="desktop">
+				    				<input type="radio" name="product" value="desktop">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -844,7 +899,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">64GB Flash Memory</span>
-				    				<input type="radio" name="opt" value="mobile">
+				    				<input type="radio" name="product" value="mobile">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -857,7 +912,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">20 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+				    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				    			</div>
 				    			<div class="clear"></div>
 				    		</div>
@@ -865,7 +920,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">30 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt" value="desktop">
+				    				<input type="radio" name="product" value="desktop">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -873,7 +928,7 @@
 				    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 				                <div class="col-sm-8 col-lg-12">
 				    				<span class="title">50 Cell Lithium Ion Battery</span>
-				    				<input type="radio" name="opt" value="mobile">
+				    				<input type="radio" name="product" value="mobile">
 				    			</div>
 				    			<div class="clear"></div>
 				    	</div>
@@ -882,7 +937,7 @@
 					<div class="form-group">
 						<div class="col-sm-10">
 						<div class="pull-right">
-							<button type="submit" class="btn btn-primary" name="Accessories">Add to Cart</button>
+							<button type="submit" class="btn btn-primary">Add to Cart</button>
 						</div>
 						</div>
 					</div>
@@ -892,6 +947,7 @@
 	</section>
 			<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 				<h1>Sol Speakers</h1>
+				<a href="#">Buy Now</a>
 			</section>
 			<section>
 			<div class="container-fluid">
@@ -1018,7 +1074,7 @@
 							    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile and Desktop">
 							                <div class="col-sm-8 col-lg-12">
 							    				<span class="title">Mono Center Speaker</span>
-							    				<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+							    				<input type="radio" name="product" value="mobile_desktop" checked="checked">
 							    			</div>
 							    			<div class="clear"></div>
 							    		</div>
@@ -1026,7 +1082,7 @@
 							    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Desktop">
 							                <div class="col-sm-8 col-lg-12">
 							    				<span class="title">Room Set (1 Center Speaker and 2 Side Speakers)</span>
-							    				<input type="radio" name="opt" value="desktop">
+							    				<input type="radio" name="product" value="desktop">
 							    			</div>
 							    			<div class="clear"></div>
 							    	</div>
@@ -1034,7 +1090,7 @@
 							    			<img src="http://placehold.it/200x50" class="img-rounded col-sm-4 col-lg-12" alt="Mobile">
 							                <div class="col-sm-8 col-lg-12">
 							    				<span class="title">Home Theater Set (1 Center Speaker, 4 Side Speakers and a Subwoofer)</span>
-							    				<input type="radio" name="opt" value="mobile">
+							    				<input type="radio" name="product" value="mobile">
 							    			</div>
 							    			<div class="clear"></div>
 							    	</div>
@@ -1043,7 +1099,7 @@
 							<div class="form-group">
 								<div class="col-sm-10">
 								<div class="pull-right">
-									<button type="submit" class="btn btn-primary" name="Speakers">Add to Cart</button>
+									<button type="submit" class="btn btn-primary">Add to Cart</button>
 								</div>
 								</div>
 							</div>
@@ -1067,9 +1123,9 @@
 		    </section>
 	<section id="help-top" class="text-center" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 				<h1>Accessories</h1>
+				<a href="#">Buy Now</a>
 	</section>
 	<section>
-		<form name="cart" action="" method="post">
 		<div class="container buffer">
 		    <div class="row">
 		    <div class="col-lg-5" style="padding-left: 0px;padding-right: 0px;">
@@ -1083,6 +1139,7 @@
 										<h3 style="padding:10px;">THIS IS H3</h3>
 										<p>Price</p>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
 								</div>
@@ -1099,6 +1156,7 @@
 										<h3 style="padding:10px;">THIS IS H3</h3>
 										<p>Price</p>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
 								</div>
@@ -1181,6 +1239,7 @@
 									<div class="caption-text">
 										<h3 style="padding:10px;">Wireless Rounter</h3>
 										<p>Price</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
@@ -1199,6 +1258,7 @@
 										<h3 style="padding:10px;">Earbud Headphones</h3>
 										<p>Price</p>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
 								</div>
@@ -1216,6 +1276,7 @@
 										<h3 style="padding:10px;">Headphones</h3>
 										<p>Price</p>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
 								</div>
@@ -1233,6 +1294,7 @@
 										<h3 style="padding:10px;">Charging Mat</h3>
 										<p>Price</p>
 										<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Details</span></a>
 										<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> Buy</span></a>
 									</div>
 								</div>
@@ -1241,16 +1303,12 @@
 		    </div>
 		</div>
 	</section>
-	<section id="apps-top" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;" tal:condition="python:logged_in">
+	<section id="apps-top" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position-y: 124.19999999999999px;">
 		<h1>Shopping Cart</h1>
 		<p style="text-align:center">Items in Your Cart</p>
 	</section>
-<<<<<<< HEAD
 	<section id="cart">
 <<<<<<< HEAD
-=======
-	<section id="cart" tal:condition="python:logged_in">
->>>>>>> parent of 6204771... Added Content
 		<div class="container block" style="padding-bottom:30px;">
 =======
 <!-- 		<div class="container block" style="padding-bottom:30px;">
@@ -1284,67 +1342,7 @@
 							<div class="col-sm-4" tal:condition="python:not logged_in">
 								<a href="#login"  class="btn btn-primary btn-sm btn-block">
 									<span class="glyphicon glyphicon-share-alt"></span> Login or Register
-<<<<<<< HEAD
 								</a>
-=======
-								</button>
-							</div>
-					<div class="row" tal:repeat="cartItem cart">
-						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
-						</div>
-						<div class="col-sm-4">
-							<h4 class="product-name"><strong>${cartItem[0]}</strong></h4><h4><small>${cartItem[2]}</small></h4>
-						</div>
-						<div class="col-sm-6">
-							<div class="col-sm-6 text-right">
-								<h4><strong>${cartItem[3]}  <span class="text-muted">x</span></strong></h4>
-							</div>
-							<div class="col-sm-2">
-								<input type="text" class="form-control input-sm" value="${cartItem[1]}">
-							</div>
-							<div class="col-sm-2">
-								<h4><strong><span class="text-muted">= </span>   ${int(cartItem[3])*int(cartItem[1])}.00</strong></h4>
-							</div>
-							<div class="col-sm-2">
-								<a href="#">Remove</a>
-							</div>
-						</div>
-						<div class="col-offset-2 col-sm-10">
-						<div class="col-sm-5">
-						<h3>Features</h3>
-						<ul>
-							<li>Feature1</li>
-							<li>Feature2</li>
-							<li>Feature3</li>
-							<li>Feature4</li>
-						</ul>
-						</div>
-						<div class="col-sm-5">
-						<h3>Includes</h3>
-						<ul>
-							<li>$speakerType and $quantity</li>
-							<li>$speakerType and $quantity</li>
-							<li>$speakerType and $quantity</li>
-							<li>$speakerType and $quantity</li>
-						</ul>
-						</div>
-						</div>
-						<div class="col-offset-2 col-sm-10">
-						<h3>Accessories</h3>
-							<div class="col-sm-10" style="margin-top:10px;">
-							<div class="col-sm-2"><img src="http://placehold.it/50x50" alt="Item Picture" style="width: 50px;height: 50px"></div>
-							<div class="col-sm-7">$accessName</div>
-							<div class="col-sm-1 text-left">$accessPrice</div>
-							<div class="col-sm-7">$accessDescription</div>
-							<div class="col-sm-1 text-left"><a href="#">Remove</a></div>
-							</div>
-							<div class="col-sm-10" style="margin-top:10px;">
-							<div class="col-sm-2"><img src="http://placehold.it/50x50" alt="Item Picture" style="width: 50px;height: 50px"></div>
-							<div class="col-sm-7">$accessName</div>
-							<div class="col-sm-1 text-left">$accessPrice</div>
-							<div class="col-sm-7">$accessDescription</div>
-							<div class="col-sm-1 text-left"><a href="#">Remove</a></div>
->>>>>>> parent of 6204771... Added Content
 							</div>
 					<div class="row">
 						<div class="col-sm-2"><img class="img-responsive" src="http://placehold.it/150x150">
@@ -1436,21 +1434,21 @@
 		<div class="col-sm-12 col-lg-3 product-chooser-item selected">
 			    <div class="col-sm-8 col-lg-12">
 					<span>Nicholas Desmond Simon Graham<br>P.O. Box 1230 Georgetown,<br>Cayman Islands B. W. I.</span>
-					<input type="radio" name="opt" value="mobile_desktop" checked="checked">
+					<input type="radio" name="product" value="mobile_desktop" checked="checked">
 				</div>
 				<div class="clear"></div>
 			</div>
 		<div class="col-sm-12 col-lg-3 product-chooser-item">
 			    <div class="col-sm-8 col-lg-12">
 					<span>Nicholas Desmond Simon Graham<br>P.O. Box 1230 Georgetown,<br>Cayman Islands B. W. I.</span>
-					<input type="radio" name="opt" value="desktop">
+					<input type="radio" name="product" value="desktop">
 				</div>
 				<div class="clear"></div>
 		</div>
 		<div class="col-sm-12 col-lg-3 product-chooser-item">
 			    <div class="col-sm-8 col-lg-12">
 					<span>Nicholas Desmond Simon Graham<br>P.O. Box 1230 Georgetown,<br>Cayman Islands B. W. I.</span>
-					<input type="radio" name="opt" value="mobile">
+					<input type="radio" name="product" value="mobile">
 				</div>
 				<div class="clear"></div>
 		</div>
@@ -1566,7 +1564,7 @@
 	</div>
 	</section>
 	<!--end cart section-->
-	<section tal:condition="python:not logged_in">
+	<section>
 			<div class="container">
 			<div class="row">
 		        <div class="col-lg-12">
@@ -1704,14 +1702,10 @@
 		</div>
 	</section>
 <<<<<<< HEAD
-<<<<<<< HEAD
 	<section>
 =======
 	<section tal:condition="python:False">
 >>>>>>> FETCH_HEAD
-=======
-	<section tal:condition="python:not logged_in">
->>>>>>> parent of 6204771... Added Content
 	<div class="container">
 		<div class="row">
 		        <div class="col-lg-12">
@@ -2125,8 +2119,6 @@
 		</script>
 	<!--gallery lightbox-->
 		<script src="js/lightbox.js"></script>
-	<!--Tabslet-->
-		<script src="js/jquery.tabslet.min.js" type="text/javascript"></script>
 	<!--custom script-->
 		<script src="js/custom.js"></script>
 	<!--end scripts-->
