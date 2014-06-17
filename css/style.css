@@ -633,6 +633,61 @@ color: #555;
   text-align: center;
 }
 
+/* Features */
+
+#features h3 {
+    font-weight: 700;
+    color: #000;
+}
+
+#features p {
+    color: #fff;
+}
+
+#features {
+    background:#d5ddde;
+    min-height: 800px;
+}
+
+.features-wrapper {
+  position: relative;
+} 
+
+#features .features-image {
+  position: absolute;
+  right: 0;
+}
+
+.features-image {
+  background: url(../images/features.jpg) no-repeat center center;
+  width: 1141px;
+  height: 800px;
+}
+
+#features h1 {
+    margin-top: 140px;
+    color: #fff;
+}
+
+/* Share Section */
+
+.social{background-color:#d5ddde}
+.social .soc-item{width:33%;float:right}
+.social .soc-item a{display:block;height:220px;background-color:#d5ddde;background-position:50% 50%;background-repeat:no-repeat;font-size:22px;position:relative;overflow:hidden;text-decoration:none}
+.social .soc-item a span{color:#fff;visibility:hidden;position:absolute}
+.social .soc-item a span.name{top:25px;left:25px}
+.social .soc-item a span.count{bottom:28px;font-size:28px;left:0;right:0;text-align:center}
+.social .soc-item a:hover,.social .soc-item a:focus{text-decoration:none;border-bottom:none}
+.social .soc-item a:hover span,.social .soc-item a:focus span{visibility:visible}
+.social .soc-item.facebook a{background-image:url(../images/fb.png);background-position-y:74px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.2)}
+.social .soc-item.facebook a:hover,.social .soc-item.facebook a:focus{background-color:#016bb6}
+.social .soc-item.twitter a{background-image:url(../images/tw.png);background-position-y:84px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.4)}
+.social .soc-item.twitter a:hover,.social .soc-item.twitter a:focus{background-color:#08c1e2}
+.social .soc-item.google a{background-image:url(../images/gplus.png);background-position-y:75px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.2)}
+.social .soc-item.google a:hover,.social .soc-item.google a:focus{background-color:#d94b34}
+.social .soc-item-holder{overflow:hidden}
+.social .soc-item-holder .soc-item{width:50%}
+
 /* Section Backgrounds */
 
 .section-base {
