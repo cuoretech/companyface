@@ -87,9 +87,22 @@ a:hover {
 
 ul { padding:0;list-style: none; }
 
-li{
-  list-style: none;
-}
+li{list-style: none;}
+
+/*video {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
 
 textarea:focus, input:focus, a:focus, *:focus {
   outline: none;
@@ -309,11 +322,11 @@ ul.thumbnail{
   height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .brand {
@@ -417,12 +430,12 @@ ul.thumbnail{
 
 #sidebar-wrapper.active {
   right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  width: 100%;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .submenu{
@@ -633,6 +646,28 @@ color: #555;
   text-align: center;
 }
 
+/* Video Section */
+
+/*.video-container {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.video{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}*/
+
 /* Features */
 
 #simple .door-wrapper {
@@ -715,7 +750,8 @@ color: #555;
 .social .soc-item a{display:block;height:220px;background-color:#d5ddde;background-position:50% 50%;background-repeat:no-repeat;font-size:22px;position:relative;overflow:hidden;text-decoration:none}
 .social .soc-item a span{color:#fff;visibility:hidden;position:absolute}
 .social .soc-item a span.name{top:25px;left:25px}
-.social .soc-item a span.count{bottom:28px;font-size:28px;left:0;right:0;text-align:center}
+.social .soc-item a span.count{bottom:28px;font-size:28px;left:135px;right:0;}
+.social .soc-item a span.type{bottom:28px;font-size:28px;left:165px;right:0;}
 .social .soc-item a:hover,.social .soc-item a:focus{text-decoration:none;border-bottom:none}
 .social .soc-item a:hover span,.social .soc-item a:focus span{visibility:visible}
 .social .soc-item.facebook a{background-image:url(../images/fb.png);background-position-y:74px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.2)}
