@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Cuore | Computer Architecture Presentation</title>
+    
+	<meta name="description" content="Cuore | Computer Architecture Presentation">
+	<meta name="author" content="Leo Schultz"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="expires" content="0">
+    <meta property="og:title" content="Cuore | Product Preview" />
+    <meta property="og:site_name" content="Product Preview" />
+    <meta property="og:image" content="img/logo.png" />
+    <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<div id="presentation" class="presentation-not-supported">
+
+    <div id="intro" class="step container" data-x="-7000" data-y="-1500" data-z="100">
+        <div class="row">
+            <div class="col-lg-12">
+            <a href="http://www.cuore.io"><img src="img/logo.png"></a><br><br>
+            </div>
+            <div class="col-lg-12">
+            <p class="title">Using Virtual Shared Graphic Acceleration to Shift the Computing Paradigm</p>
+            </div>
+            <div class="col-lg-12 col-sm-4 col-xs-4">
+            <p class="authors">Leo Schultz</p>
+            </div>
+            <div class="col-lg-12 col-sm-4 col-xs-4">
+            <p class="authors">Afif Antabli</p>
+            </div>
+            <div class="col-lg-12 col-sm-4 col-xs-4">
+            <p class="authors">Eduardo Martorano</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step container" data-x="-5000" data-y="-1500">
+        <div class="row">
+            <h1>The Problem</h1>
+            <ul>
+                <li>Processing and Storage Limits</li>
+                <li>Asynchronous Native Environments</li>
+                <li>Lack of a Common File System</li>
+                <li>The mobile "Power Wall"</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step container" data-x="-3000" data-y="-1500" data-z="-100">
+        <h1>Terms</h1>
+        <p>Virtualization</p>
+        <p class="point">A level of virtual abstraction from hardware or the physical.</p>
+        <p>Virtual Environment</p>
+        <p class="point">An isolated instance create by virtualization which allows for the instance to not affect operating instance running parallel with it.</p>
+        <p>Computing Paradigm</p>
+        <p class="point">Refers to the current computing model being used in a consistent pattern.</p>
+        <p>Virtual Machine Monitor</p>
+        <p class="point">A piece of firmware which manages, maps and allocates host resources of virtual environments. (aka a Hypervisor)</p>
+        <p>Hypervisor Server</p>
+        <p class="point">A virtual machine manager, which can use the host computing resources to service client devices.</p>
+    </div>
+    <div class="step container" data-x="-1000" data-y="-1500" data-z="-100">
+        <h1>Terms</h1>
+        <p>Virtual Desktop Agent</p>
+        <p class="point">A desktop client which uses a virtual resource infrastructure to access the computing resources of a host virtual machine.</p>
+        <p>Remote Desktop Client</p>
+        <p class="point">A client program which allows a user to connect to a computer in another location, see that computer's desktop and interact with it as if it were local.</p>
+        <p>Virtual Dedicated Graphics Acceleration</p>
+        <p class="point">A single virtual machine mapped to a physical host GPU which provides high-end, hardware-accelerated graphics through a network to a discrete client device.</p>
+        <p>Virtual Shared Graphics Acceleration</p>
+        <p class="point">Many virtual machines mapped to a physical host GPU which provides high-end, hardware-accelerated graphics through a network to a discrete client device.</p>
+        <p>Asynchronous Local Area Network System</p>
+        <p class="point">A centralized server system which can virtually server multiple light weight, thin-client devices through a local area network with the computer resources necessary to function as full range computers.</p>
+    </div>
+    <div class="step container" data-x="-4000" data-y="0" data-rotate="270" data-scale="1">
+        <div class="row">
+            <div class="col-lg-12">
+            <p>Cuore Paradigm</p>
+            </div>
+            <div class="col-lg-12">
+            <img src="img/StdRDC.png" style="width:1000px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="step container" data-x="3000" data-y="2000" data-rotate="90" data-scale="6">
+        <div class="row">
+            <div class="col-lg-12">
+            <p>System Design</p>
+            </div>
+            <div class="col-lg-12">
+            <img src="img/SystemDesign.png" style="width:1000px;">
+            </div>
+        </div>
+    </div>
+
+<!--     <div id="its" class="step container" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>It's a <strong>presentation tool</strong> <br/>
+        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
+        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    </div>
+
+    <div id="big" class="step container" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    </div>
+
+    <div id="tiny" class="step container" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>and <b>tiny</b> ideas</p>
+    </div>
+
+    <div id="ing" class="step container" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    </div>
+
+    <div id="imagination" class="step container" data-x="6700" data-y="-300" data-scale="6">
+        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>want to know more?</p>
+        <q><a href="http://github.com/shame/jmpress.js">use the source</a>, Luke!</q>
+    </div>
+
+    <div id="one-more-thing" class="step container" data-x="6000" data-y="4000" data-scale="2">
+        <p>one more thing...</p>
+    </div>
+
+    <div id="its-in-3d" class="step container" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
+    </div> -->
+
+    <div id="overview" class="step container" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	$('#presentation').jmpress();
+});
+</script>
+</body>
+</html>
