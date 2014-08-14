@@ -590,32 +590,675 @@ WiFi with data rates up to 1.3 Gbps, allowing for upto 50 connections. The perfe
     </section>
     <!-- End Share Section -->
 
-    <!-- Start Help Section -->
-    <section id="help" class="section-pad">
-        <div class="container text-center" style="margin-bottom: 15px;">
-            <div class="row">
-                <div class="col-lg-3 vert-buffer">
-                        <p><img src="images/donate.png" alt="Donate" style="width:160px;margin: 37px 0 0"></p>
-                        <h4>Donate</h4>
+    <section class="section-pad" id="help">
+        <div class="container text-center row" style="margin-bottom: 15px;">
+            <div class="col-lg-3 vert-buffer">
+                <p><img alt="Donate" src="images/donate.png" style=
+                "width:160px;margin: 37px 0 0"></p>
+
+                <h4>Donate</h4>
+            </div>
+
+            <div class="col-lg-3 vert-buffer">
+                <p><img alt="Invest" src="images/invest.png" style=
+                "width:160px;margin: 32px 0 0"></p>
+
+                <h4>Invest</h4>
+            </div>
+
+            <div class="col-lg-3 vert-buffer">
+                <p><img alt="Partner" src="images/partner.png" style=
+                "width:160px;margin: 37px 0 0"></p>
+
+                <h4>Become a Partner</h4>
+            </div>
+
+            <div class="col-lg-3 vert-buffer">
+                <p><img alt="Community" src="images/opensource.png" style=
+                "width:160px;margin: 37px 0 0"></p>
+
+                <h4>Join our Community</h4>
+            </div>
+        </div>
+    </section><!-- End Help Section -->
+
+    <section class="" id="donate">
+        <div class="container block row">
+            <div class="col-lg-4">
+                <p class="text-center"><img alt="donate" src="img/invest.png"
+                style="width:160px;margin: 30px 0"></p>
+            </div>
+
+            <div class="col-lg-8">
+                <h2>Donate to keep us going</h2>
+
+                <p>We want to be financially independent to make sure we can
+                select the best suited partners and stay critical. We will
+                spend every penny in expanding the Cuore community.</p>
+
+                <p>Please choose your preferred payment type:</p><a id="donate"
+                name="donate"></a>
+
+                <p class="support-options" style="margin: 30px 0"></p>
+
+                <div class="card" id="stripeForm">
+                    <form action="" class="form-horizontal" id=
+                    "donation-stripe" method="post" name="stripe">
+                        <div class="form-group col-lg-offset-3 col-lg-9" style=
+                        "margin-top:30px;">
+                            <span class="stripe-errors"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" for=
+                            "name">Cardholder's Name:</label>
+
+                            <div class="col-lg-6">
+                                <input class="form-control" data-stripe="name"
+                                id="name" maxlength="50" size="20" type="text">
+                            </div>
+
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" for=
+                            "number">Card Number:</label>
+
+                            <div class="col-lg-6">
+                                <input class="form-control" data-stripe=
+                                "number" id="number" maxlength="20" size="20"
+                                type="text">
+                            </div>
+
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" data-stripe=
+                            "name" for="number" id="month">Expiration
+                            Date:</label>
+
+                            <div class="col-lg-2">
+                                <select class="form-control" data-stripe=
+                                "exp-month" id="month" name="month" title=
+                                "Month">
+                                    <option selected="selected" value="01">
+                                        01
+                                    </option>
+
+                                    <option value="02">
+                                        02
+                                    </option>
+
+                                    <option value="03">
+                                        03
+                                    </option>
+
+                                    <option value="04">
+                                        04
+                                    </option>
+
+                                    <option value="05">
+                                        05
+                                    </option>
+
+                                    <option value="06">
+                                        06
+                                    </option>
+
+                                    <option value="07">
+                                        07
+                                    </option>
+
+                                    <option value="08">
+                                        08
+                                    </option>
+
+                                    <option value="09">
+                                        09
+                                    </option>
+
+                                    <option value="10">
+                                        10
+                                    </option>
+
+                                    <option value="11">
+                                        11
+                                    </option>
+
+                                    <option value="12">
+                                        12
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <select class="form-control" data-stripe=
+                                "exp-year" name="year" title="Year">
+                                    <option value="2013">
+                                        2013
+                                    </option>
+
+                                    <option selected="selected" value="2014">
+                                        2014
+                                    </option>
+
+                                    <option value="2015">
+                                        2015
+                                    </option>
+
+                                    <option value="2016">
+                                        2016
+                                    </option>
+
+                                    <option value="2017">
+                                        2017
+                                    </option>
+
+                                    <option value="2018">
+                                        2018
+                                    </option>
+
+                                    <option value="2019">
+                                        2019
+                                    </option>
+
+                                    <option value="2020">
+                                        2020
+                                    </option>
+
+                                    <option value="2021">
+                                        2021
+                                    </option>
+
+                                    <option value="2022">
+                                        2022
+                                    </option>
+
+                                    <option value="2023">
+                                        2023
+                                    </option>
+
+                                    <option value="2024">
+                                        2024
+                                    </option>
+
+                                    <option value="2025">
+                                        2025
+                                    </option>
+
+                                    <option value="2026">
+                                        2026
+                                    </option>
+
+                                    <option value="2027">
+                                        2027
+                                    </option>
+
+                                    <option value="2028">
+                                        2028
+                                    </option>
+
+                                    <option value="2029">
+                                        2029
+                                    </option>
+
+                                    <option value="2030">
+                                        2030
+                                    </option>
+
+                                    <option value="2031">
+                                        2031
+                                    </option>
+
+                                    <option value="2032">
+                                        2032
+                                    </option>
+
+                                    <option value="2033">
+                                        2033
+                                    </option>
+
+                                    <option value="2034">
+                                        2034
+                                    </option>
+
+                                    <option value="2035">
+                                        2035
+                                    </option>
+
+                                    <option value="2036">
+                                        2036
+                                    </option>
+
+                                    <option value="2037">
+                                        2037
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-5"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" for=
+                            "cvc">Security code (CVC):</label>
+
+                            <div class="col-lg-6">
+                                <input class="form-control" data-stripe="cvc"
+                                id="cvc" maxlength="4" size="4" type="text">
+                            </div>
+
+                            <div class="col-lg-3"></div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-3  vert-buffer">
-                        <p><img src="images/invest.png" alt="Invest" style="width:160px;margin: 32px 0 0"></p>
-                        <h4>Invest</h4>
+
+                <div class="card donation-form" id="donationForm" style="">
+                    <form action="/api/donation/donate" class="form-horizontal"
+                    id="donation" method="post" name="donation">
+                        <p>We will not publish the contribution amount due to
+                        privacy concerns. Would you like your name to be added
+                        to the contributers list?</p>
+
+                        <div class="form-group col-lg-offset-3 col-lg-9">
+                            <div class="radio">
+                                <label><input checked id="no" name="public"
+                                type="radio" value="no"> No, anonymous</label>
+                            </div>
+
+                            <div class="radio">
+                                <label><input id="yes" name="public" type=
+                                "radio" value="yes"> Yes, publish my
+                                name</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" data-stripe=
+                            "name" for="publicName">Public Name:</label>
+
+                            <div class="col-lg-6">
+                                <input class="form-control" id="publicName"
+                                maxlength="50" name="publicName" size="20"
+                                type="text">
+                            </div>
+
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" data-stripe=
+                            "name" for="email">Email address:</label>
+
+                            <div class="col-lg-6">
+                                <input class="form-control" id="email"
+                                maxlength="255" name="email" size="20" type=
+                                "text">
+                            </div>
+
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" data-stripe=
+                            "name" for="amount">Amount:</label>
+
+                            <div class="col-lg-2">
+                                <select class="form-control" id="currency"
+                                name="currency" title="currency">
+                                    <option value="USD">
+                                        USD
+                                    </option>
+
+                                    <option selected="selected" value="EUR">
+                                        EUR
+                                    </option>
+
+                                    <option value="GPB">
+                                        GPB
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <input class="form-control" id="amount"
+                                maxlength="6" name="amount" size="5" style=
+                                "text-align: right" type="text">
+                            </div>
+
+                            <div class="col-lg-5"></div>
+                        </div><input name="provider" type="hidden" value=
+                        "stripe">
+
+                        <div class="form-group col-lg-offset-3 col-lg-9" style=
+                        "margin-top:30px;">
+                            <button class="btn btn-inverted" id=
+                            "processDonation" type="submit">Make
+                            Donation</button>
+                        </div>
+
+                        <div class="form-group col-lg-offset-3 col-lg-9 result"
+                        style="margin-top:30px;"></div>
+                    </form>
                 </div>
-                <div class="col-lg-3  vert-buffer">
-                        <p><img src="images/partner.png" alt="Partner" style="width:160px;margin: 37px 0 0"></p>
-                        <h4>Become a Partner</h4>
-                </div>
-                <div class="col-lg-3  vert-buffer">
-                        <p><img src="images/opensource.png" alt="Community" style="width:160px;margin: 37px 0 0"></p>
-                        <h4>Join our Community</h4>
-                </div>
+
+                <ul>
+                    <li>$1+ = Thank you :)</li>
+
+                    <li style="list-style: none"><i class=
+                    "fa fa-thumbs-up"></i></li>
+
+                    <li>$20+ = Cuore PostCard + Feature Suggestion</li>
+
+                    <li style="list-style: none"><i class=
+                    "fa fa-thumbs-up"></i><i class=
+                    "fa fa-envelope"></i><i class="fa fa-lightbulb-o"></i></li>
+
+                    <li>$50+ = Cuore PostCard + Feature Suggestion + Cuore
+                    T-Shirt</li>
+
+                    <li style="list-style: none"><i class=
+                    "fa fa-thumbs-up"></i><i class=
+                    "fa fa-envelope"></i><i class=
+                    "fa fa-lightbulb-o"></i><i class="fa fa-user"></i><i class=
+                    "fa fa-user"></i></li>
+
+                    <li>$100+ = Cuore PostCard + Feature Suggestion + Cuore
+                    T-Shirt + Pre-Release Bid (Get the chance to buy our
+                    explorer edition first)</li>
+
+                    <li style="list-style: none"><i class=
+                    "fa fa-thumbs-up"></i><i class=
+                    "fa fa-envelope"></i><i class=
+                    "fa fa-lightbulb-o"></i><i class="fa fa-user"></i><i class=
+                    "fa fa-user"></i><i class="fa fa-tag"></i></li>
+
+                    <li>$500+ = Cuore PostCard + Feature Suggestion + Cuore
+                    T-Shirt + Pre-Release Bid (Get the chance to buy our
+                    explorer edition first) + Invite to Product Preview
+                    Meet-up</li>
+
+                    <li style="list-style: none"><i class=
+                    "fa fa-thumbs-up"></i><i class=
+                    "fa fa-envelope"></i><i class=
+                    "fa fa-lightbulb-o"></i><i class="fa fa-user"></i><i class=
+                    "fa fa-user"></i><i class="fa fa-tag"></i><i class=
+                    "fa fa-beer"></i></li>
+
+                    <li>$2000+ = Cuore PostCard + Feature Suggestion + Cuore
+                    T-Shirt + Pre-Release Bid (Get the chance to buy our
+                    explorer edition first) + Invite to Personal One-on-One
+                    Meet-up with Cuore Team</li>
+
+                    <li style="list-style: none"><i class=
+                    "fa fa-thumbs-up"></i><i class=
+                    "fa fa-envelope"></i><i class=
+                    "fa fa-lightbulb-o"></i><i class="fa fa-user"></i><i class=
+                    "fa fa-user"></i><i class="fa fa-tag"></i><i class=
+                    "fa fa-beer"></i><i class="fa fa-building-o"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container block">
+            <div class="row col-lg-12 text-center">
+                <h2>Our generous donors</h2>
+
+                <p>On this list you can find all of our amazing donors that
+                allowed publication of their name.<br>
+                Ordered by amount they donated, the more generous the higher on
+                the list.</p>
+            </div>
+
+            <div class="row col-lg-12 donationlist">
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
+
+                <p class="col-lg-2">Furkan</p>
             </div>
         </div>
     </section>
-    <!-- End Help Section -->
 
+    <section class="" id="invest">
+        <div class="container block row" style="padding-bottom:30px;">
+            <div class="col-lg-4"><img alt="handshake" src="img/partner.png"
+            style="width: 200px;height: 200px"></div>
 
+            <div class="col-lg-8">
+                <h2>Invest</h2>
+
+                <p>We are really keen on pushing this project forward. Up until
+                now we have relied on donations and volunteer work to keep us
+                going. For this project to succeed we need a bigger, full time
+                employed team, we need funding for our servers and we need you
+                and your company. We truly appreciate that you are thinking
+                about contributing to the success of this project. Thank
+                you!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="" id="partner">
+        <div class="container block row" style="padding-bottom:30px;">
+            <div class="col-lg-4"><img alt="handshake" src="img/partner.png"
+            style="width: 200px;height: 200px"></div>
+
+            <div class="col-lg-8">
+                <h2>Contribution</h2>
+
+                <p>We are really keen on pushing this project forward. Up until
+                now we have relied on donations and volunteer work to keep us
+                going. For this project to succeed we need a bigger, full time
+                employed team, we need funding for our servers and we need you
+                and your company. We truly appreciate that you are thinking
+                about contributing to the success of this project. Thank
+                you!</p>
+            </div>
+        </div>
+
+        <div class="container block row" style="padding-bottom: 15px">
+            <div class="col-lg-4">
+                <h2>Supplier</h2>
+
+                <p>As a Friend you will be connected with us and get your logo
+                on our website.<br>
+                Price: Contribute to the project; help, support, manpower,
+                donation.<br>
+                <br>
+                &nbsp;</p>
+
+                <p class="text-center"><a class="btn btn-inverted" href=
+                "mailto:kevin@cuore.io">Get in Touch</a></p>
+            </div>
+
+            <div class="col-lg-4">
+                <h2>Sponsor</h2>
+
+                <p>As a Sponsor we will actively share your ideas with our
+                community and you will get to contribute to our project in
+                multiple ways.<br>
+                Price: â‚¬ 1k/month<br>
+                <br>
+                &nbsp;</p>
+
+                <p class="text-center"><a class="btn btn-inverted" href=
+                "mailto:kevin@cuore.io">Get in Touch</a></p>
+            </div>
+
+            <div class="col-lg-4">
+                <h2>Collaborator</h2>
+
+                <p>As a Associate you will be closely connected to us and at
+                the forefront of our project. We will actively share and you
+                with, and endorse you on, our community. And you will get to
+                contribute to our project in significant ways.<br>
+                Price: â‚¬ 5k/month</p>
+
+                <p class="text-center"><a class="btn btn-inverted" href=
+                "mailto:kevin@cuore.io">Get in Touch</a></p>
+            </div>
+        </div>
+
+        <div class="container block row" style="padding: 90px 0">
+            <div class="col-lg-4 text-center">
+                <a href="#"><img alt="partner" src="img/vm-supplier.png" style=
+                "width: 161px;height:84px"></a><br>
+                <br>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <a href="#"><img alt="partner" src="img/cpu-supplier.png"
+                style="width: 161px;height:84px"></a><br>
+                <br>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <a href="#"><img alt="partner" src="img/gpu-supplier.png"
+                style="width: 161px;height:84px"></a><br>
+                <br>
+            </div>
+        </div>
+
+        <div class="container row col-lg-12 text-left" id="google-more" style=
+        "padding-bottom: 15px;">
+            <h4>Google</h4>
+
+            <p>Google started out as a search engine but we've grown into so
+            much more. We build products that we hope will make the web better,
+            and Therefore your experience on the web better. With products like
+            Chrome and Android, we want to make it simpler and faster for
+            people to do what they want to online. Above all, It Means making
+            our products work better so That people can spend time on the stuff
+            they're good at, like enjoying time with family, camping in the
+            wilderness, painting a picture or throwing a party. We're not there
+            yet, but we're working on it.</p>
+
+            <h5 style="margin-top: 30px">Project Ara</h5>
+
+            <p>Google is developing their version of a modular phone; Project
+            Ara. By turning the phone into a canvas so that your phone does
+            exactly what you want it to do, and looks you way you want it to
+            be.</p>
+
+            <p>They are aiming to create a phone for all the 5 billion people
+            on Earth that haveâ€™t got a smartphone yet. Currently they are
+            building a prototype and will run a proof of concept at convincing
+            scale next year....</p>
+        </div>
+    </section>
+
+    <section class="" id="community">
+        <div class="container block row" style="padding-bottom:30px;">
+            <div class="col-lg-4"><img alt="opensource" src=
+            "img/opensource.png" style="width: 200px;height: 200px"></div>
+
+            <div class="col-lg-8">
+                <h2>Community</h2>
+
+                <p>We are really keen on pushing this project forward. Up until
+                now we have relied on donations and volunteer work to keep us
+                going. For this project to succeed we need a bigger, full time
+                employed team, we need funding for our servers and we need you
+                and your company. We truly appreciate that you are thinking
+                about contributing to the success of this project. Thank
+                you!</p>
+            </div>
+        </div>
+
+        <div class="container block row" style="padding-bottom: 15px">
+            <div class="col-lg-6 col-sm-6 bottom-buffer github-widget"
+            data-repo="cuoretech/ALAN"></div>
+
+            <div class="col-lg-6 col-sm-6 bottom-buffer github-widget"
+            data-repo="cuoretech/lusciOS"></div>
+
+            <div class="col-lg-6 col-sm-6 bottom-buffer github-widget"
+            data-repo="cuoretech/SoundShack"></div>
+
+            <div class="col-lg-6 col-sm-6 bottom-buffer github-widget"
+            data-repo="cuoretech/DoWork"></div>
+
+            <div class="col-lg-6 col-sm-6 bottom-buffer github-widget"
+            data-repo="cuoretech/CompanyFace"></div>
+        </div>
+    </section>
     <!--Start Donate Details section-->
     <section id="details" class="section-pad hidden">
         <div class="container">
