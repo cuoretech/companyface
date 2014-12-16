@@ -1,0 +1,421 @@
+@media (min-width: 1200px){
+
+}
+
+
+/*Notebooks and Small Laptops*/
+@media (min-width: 1025px){
+
+}
+
+/*iPad Landscape Mode and Large Tablets */
+@media (max-width: 1024px){
+
+
+}
+
+/*Small Desktop and Very Small Notebook */
+@media (max-width: 992px){
+
+    .widget:first-child{
+        margin-top:100px;
+    }
+
+    .serviceBox h2 span {
+        letter-spacing:5px;
+        font-size:22px;
+    }
+
+    #owl-clients{
+        margin-top:50px;
+    }
+
+    #text-separator-testimonials h3{
+        text-align:center;
+        margin-bottom:50px;
+    }
+
+
+}
+
+/*Medium Tablets */
+@media (max-width: 900px){
+
+    .navbar-nav > li > a {
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/*iPad Portrait Mode, iPad Mini and Small Tablets */
+@media (max-width: 768px){
+
+
+    .contactInfo1{
+        padding:20px;
+        border:0;
+    }
+
+    #googleMap{
+        margin-top:30px;
+    }
+
+
+    /*#portfolio .captionWrapper .valign{*/
+        /*padding-top:130px;*/
+    /*}*/
+
+    .preloaderLogo{
+        min-width: 170px;
+        max-width: 170px;
+        width: 170px;
+    }
+
+    .ip-header {
+        min-height: 120px;
+    }
+
+    /*.affix .navbar-collapse {*/
+        /*background:transparent;*/
+    /*}*/
+
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        text-align: center;
+    }
+
+    .portfolioFilters {
+        height: 220px;
+    }
+
+    #filters{
+        text-align:center;
+    }
+
+    .activeFilter{
+        text-align:center;
+    }
+
+    .gallery .gallery-inner,
+    .gallery .grid-sizer {
+        width: 50%;/* change here the column width */
+    }
+
+    .overlay-close {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        right: 30px;
+    }
+
+
+    .memberDescription{
+        text-align: center;
+    }
+
+
+    .memberParagraph{
+        padding-right:0px;
+    }
+
+    .clientsIntro{
+        text-align: center;
+    }
+
+
+    .tableWrapper{
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .singleProjectInfo ul {
+        border-left: 0;
+        text-align: center;
+    }
+
+    #text-separator-clients h2,
+    #text-separator-testimonials h2{
+        font-size:20px;
+
+    }
+
+    #team .container{
+        padding-bottom:200px;
+    }
+
+    #countdown .countdown-amount{
+        font-size: 30px;
+    }
+
+    #countdown .countdown-section{
+        border-left:none;
+    }
+
+    .serviceBox{
+        width:100%;
+        height:450px;
+    }
+
+    .serviceBox:nth-child(2){
+        border-left:1px solid #d5d5d5;
+    }
+
+    .serviceBox:nth-child(4){
+        border-left:1px solid #d5d5d5;
+    }
+
+    .teamParallax1, .teamParallax2{
+        display:none!important
+    }
+
+    #singlePageContent .info-item {
+        border-right: 0px;
+    }
+
+    .footerBox{
+        padding:50px;
+    }
+
+    #footer .bottomLine p {
+        text-align:center;
+    }
+
+    #footer .bottomLine .allIconsSocialWrapper{
+        text-align:center;
+    }
+
+
+}
+
+/*iPad Portrait Mode, iPad Mini and Small Tablets */
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-collapse {
+        border-color: #e7e7e7;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+
+    .affix.navbar-default .navbar-collapse {
+        border-color: #e7e7e7;
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+    }
+
+}
+
+/*Medium Smart Phones v2*/
+@media screen and (max-width: 640px){
+    h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    #intro h1{
+        letter-spacing:1px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .introLogo {
+        width: 170px;
+    }
+
+    #aboutIntro .sectionIntro h1 {
+        letter-spacing: 1px;
+    }
+
+    h3 .serif {
+        font-size: 90%;
+    }
+
+    .serviceBox h2 span {
+        padding: 0;
+        border: 0;
+    }
+
+    #singlePageIntro .container {
+        padding: 30px;
+    }
+
+
+    .tableWrapper {
+        padding: 30px;
+        padding-bottom:50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 3px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) and (orientation : landscape){
+
+}
+
+
+@media screen and (max-width: 480px){
+
+
+
+    .topLine {
+        padding: 20px;
+    }
+
+    section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size:24px;
+        letter-spacing: 0px;
+    }
+
+    h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+
+    #intro .separator {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #intro .separator {
+        width: 100px;
+        max-width: 100px;
+    }
+
+    #intro p {
+        font-size: 12px;
+    }
+
+    .navbar-default {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .portfolioFilters {
+        height: 280px;
+    }
+
+
+    .serviceBox {
+        padding: 20px;
+    }
+    .gallery .gallery-inner,
+    .gallery .grid-sizer {
+        width: 100%;/* change here the column width */
+    }
+}
+
+/*google nexus ish*/
+@media screen and (max-width: 480px) {
+
+    .inclineLine {
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 60px;
+        left: 42%;
+    }
+
+    h1.minimal, h1.minimal small{
+        font-size: 36px;
+        letter-spacing: -3px;
+        line-height:40px;
+    }
+
+    h2.minimal, h2.minimal small{
+        font-size: 30px;
+        letter-spacing: -2px;
+        line-height:36px;
+    }
+
+    h3.minimal, h3.minimal small{
+        font-size: 26px;
+        letter-spacing: -2px;
+        line-height:30px;
+    }
+
+    h4.minimal, h4.minimal small{
+        font-size: 22px;
+        letter-spacing: 0px;
+        line-height:26px;
+    }
+
+
+
+    #text-separator-clients h3 span {
+        padding:0;
+        border:none;
+    }
+
+    .serviceBox {
+        width: 100%;
+    }
+
+    #text-separator-testimonials h3 span {
+        padding:0;
+        border:none;
+    }
+}
+/*Other Major Small Smart Phones*/
+@media screen and (max-width: 360px){
+
+    .overlay-close i {
+        font-style: normal;
+        font-size: 1.5em;
+    }
+
+
+    section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+
+    .portfolioFilters {
+        height: 450px;
+    }
+
+
+
+    .tableWrapper {
+        padding: 10px;
+        padding-bottom:30px;
+    }
+
+    .listwrapper{
+        width:100%;
+    }
+}
+
+/*iPhone Portrait Mode and Very Small Mobile Phones*/
+@media screen and (max-width: 320px) {
+
+
+}
