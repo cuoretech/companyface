@@ -484,7 +484,7 @@ h6{
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
     color: #4c4c4c;
 }
@@ -936,7 +936,7 @@ h3 small, h4 small, h5 small{
 }
 
 #text-separator-clients{
-    background-color: #555;
+    background-color: black;
     overflow:hidden;
 }
 
@@ -1053,7 +1053,7 @@ h3 small, h4 small, h5 small{
 
 
 #aboutIntro{
-    background-color: rgb(245, 245, 245);
+    background-color: white;
 }
 
 #aboutIntro .sectionIntro  h1 {
@@ -1069,7 +1069,7 @@ h3 small, h4 small, h5 small{
 
 
 #aboutContent{
-    background-color: white;
+    background-color: #DBDBDB;
 }
 
 .aboutIconWrapper{
@@ -1144,7 +1144,7 @@ h3 small, h4 small, h5 small{
 
 
 #team {
-    background:white;
+    background:#DEDEDE;
 }
 
 
@@ -1305,7 +1305,7 @@ h3 small, h4 small, h5 small{
 }
 
 #servicesContent{
-    background-color: white;
+    background-color: #DEDEDE;
 }
 
 #servicesContent .container{
@@ -2220,7 +2220,7 @@ h3 small, h4 small, h5 small{
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
 #contactIntro{
-    background-color: rgb(245, 245, 245);
+    background-color: #DBDBDB;
 }
 
 #contactContent{
