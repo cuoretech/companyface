@@ -87,6 +87,23 @@ section .container{
     width: 15%;
 }
 
+#loading {
+position: fixed;
+left: 25%;
+top: 0px;
+width: 40%;
+height: 100%;
+z-index: 9999;
+}
+
+.splash {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: #222;
+}
 
 
 .black-overlay {
@@ -820,7 +837,7 @@ h3 small, h4 small, h5 small{
 
 .introLogo{
     position:relative;
-    width:200px;
+    width:500px;
 }
 
 #intro a{
@@ -832,7 +849,7 @@ h3 small, h4 small, h5 small{
 }
 
 
-#intro .leftIntroLink{
+#intro .ftIntroLink{
     padding:25px 30px 25px 200px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -1053,13 +1070,15 @@ h3 small, h4 small, h5 small{
 
 
 #aboutIntro{
-    background-color: white;
+    background-color: #555;
 }
 
 #aboutIntro .sectionIntro  h1 {
     padding-bottom:0;
     text-transform: uppercase;
     letter-spacing:4px;
+    opacity:1;
+    z-index: 1;
 }
 
 #aboutIntro .sectionIntro h1.minimal{
@@ -1069,7 +1088,8 @@ h3 small, h4 small, h5 small{
 
 
 #aboutContent{
-    background-color: #DBDBDB;
+    background-color: #555;
+
 }
 
 .aboutIconWrapper{
@@ -1305,7 +1325,7 @@ h3 small, h4 small, h5 small{
 }
 
 #servicesContent{
-    background-color: #DEDEDE;
+    background-color: #CCCCCC;
 }
 
 #servicesContent .container{
@@ -3116,5 +3136,10 @@ color: white;
 
 .login-logo{
     max-width: 250px;
+}
+
+.play{
+  width: 50px;
+  padding: 15px;
 }
 

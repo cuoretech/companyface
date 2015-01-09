@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+	<path fill="#A90D15" d="M288.2,142.6l28.4,40.3l47.6-125.5L234,54.1l25.1,41l-7.9,4c0,0-80.6-71.3-159.8-34.3
+		C16.1,93.8,16.1,203.4,16.1,203.4L98,228.5c0,0-3.3-66.7,46.9-90.5c49.2-20.5,105,26.7,105,26.7L288.2,142.6z"/>
+	<path fill="#A90D15" d="M301.1,303.5l42.9,39.6c0,0,60.1-64.1,60.1-118.9c0-64.1-61.4-83-61.4-83l31-81.5c0,0,112.3,31,115.6,127.5
+		c4,87.8-99.7,194.2-99.7,194.2l42,40.3l-130.5,18.5V303.5z"/>
+	<path fill="#A90D15" d="M162.4,258L32.8,217.1l4.7,136.7l39-30.4c0,0,32.1,37.2,67.4,70.7c36.3,34.5,75.9,65.4,75.9,65.4l73.3-16.5
+		c0,0-52.8-41-98.4-82.6c-38.6-35.2-71.3-72-71.3-72L162.4,258z"/>
+		<animate attributeName="opacity"
+             values="0;1;0" dur="3s"
+             repeatCount="indefinite"/> 
+
+</g>
+</svg>
