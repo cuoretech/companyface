@@ -70,12 +70,12 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a id="signup" class="login">Sign Up</a></li>
+                            <li class="active"><a id="signup" class="login">Login</a></li>
                             <li><a data-scroll href="#aboutIntro">About</a></li>
                             <li><a data-scroll href="#servicesIntro">Applications</a></li>
                             <li><a data-scroll href="#text-separator-clients">Clients</a></li>
                             <li><a data-scroll href="#contactIntro">Contact</a></li>
-                            <li><a id="login" class="login overlay-ajax navoverlay">Login</a></li>
+                            <li><a id="login" class="login overlay-ajax navoverlay">Sign Up</a></li>
                         </ul>
 
                     </div><!-- /.navbar-collapse -->
@@ -101,52 +101,65 @@
 <div class="menu-overlay">
   <div class="menu-content">
       <div class="row menu-overlay">
-            <!-- multistep form -->
-        <form class="msform">
-            <!-- progressbar -->
-            <ul class="progressbar">
-            </ul>
-            <!-- fieldsets -->
-            <fieldset>
-            <img class="login-logo" src="images/logo.png">
-            <h2 class="fs-title">Sign In</h2>
-            <h3 class="fs-subtitle">Sign Into Your Cuore Account!</h3>
-            <input style="outline:none;" type="text" name="email" placeholder="Email" />
-            <input style="outline:none;" type="password" name="pass" placeholder="Password" />
-            <input type="cancel" name="cancel" class="login-close submit action-button submitbtn" value="Cancel"/>
-            <input type="submit" name="submit" class="login-close submit action-button submitbtn" value="Submit" />
-            <h3 class="fs-subtitle">Forgot Your <a href="forgotpassword.html" target="_blank">Password?</a></h3>
-            </fieldset>
-      </form>
+<!-- multistep form -->
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profiles</li>
+            <li>Personal Details</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <i class="fa fa-times login-close"></i>
+            <h1>Signup</h1>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <i class="fa fa-times login-close"></i>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <i class="fa fa-times login-close"></i>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+          </fieldset>
+        </form>
     </div>
     </div>
 </div>
 <div class="signup-overlay">
   <div class="menu-content">
       <div class="row signup-overlay">
-            <form class="msform">
-            <!-- fieldsets -->
-            <fieldset>
-            <h2 class="fs-title">Create your account</h2>
-            <h3 class="fs-subtitle">This is step 1</h3>
-            <input style="outline:none;" type="text" name="email" placeholder="Email" />
-            <input style="outline:none;" type="password" name="pass" placeholder="Password" />
-            <input style="outline:none;" type="password" name="cpass" placeholder="Confirm Password" />
-            <h2 class="fs-title">Social Profiles</h2>
-            <h3 class="fs-subtitle">Your presence on the social network</h3>
-            <input style="outline:none;" type="text" name="twitter" placeholder="Twitter" />
-            <input style="outline:none;" type="text" name="facebook" placeholder="Facebook" />
-            <input style="outline:none;" type="text" name="gplus" placeholder="Google Plus" />
-            <h2 class="fs-title">Personal Details</h2>
-            <h3 class="fs-subtitle">We will never sell it</h3>
-            <input style="outline:none;" type="text" name="fname" placeholder="First Name" />
-            <input style="outline:none;" type="text" name="lname" placeholder="Last Name" />
-            <input style="outline:none;" type="text" name="phone" placeholder="Phone" />
-            <textarea style="outline:none;" name="address" placeholder="Address"></textarea>
-            <input type="cancel" name="cancel" class="signup-close submit action-button submitbtn" value="Cancel"/>
-            <input type="submit" name="submit" class="menu-overlay-close-list submit action-button submitbtn" value="Submit" />
-            </fieldset>
-      </form>
+        <!-- multistep form -->
+        <form id="msform">
+          <!-- fieldsets -->
+          <fieldset>
+            <i class="fa fa-times signup-close"></i>
+            <h2 class="fs-title">Login to Syncform</h2>
+            <h3 class="fs-subtitle">Enter your login information</h3>
+            <input type="text" name="fname" placeholder="Email" />
+            <input type="text" name="lname" placeholder="Password" />
+            <input type="submit" name="submit" class="submit action-button signup-close" value="Submit" />
+          </fieldset>
+        </form>
     </div>
   </div>
 </div>
@@ -707,7 +720,7 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="team">
 
-            <div class="container">
+            <div class="container" style="bottom:100px;">
 
                 <div class="text-center col-md-offset-1 col-md-11">
                     <h1>EXECUTIVE TEAM</h1>
@@ -1089,198 +1102,11 @@
                                 </div>
 
                                 <div class="clearfix"></div>
-
-
-<<<<<<< HEAD
                             </div>
                         </div>
                         <!--end member-->
-=======
-        <section id="servicesContent">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-calendar fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Planner</h3>
-                        <p style="padding-bottom:20px">An easier way to plan. Your new all-inclusive calendar. Planner will begin to realize common routines that you have, such as going to work, or your workout plan. It even adds your diet plan to each and every day, recommending meals and reminding dietary restrictions, if any. Finally, everything in your life will work together to create a schedule that best pleases you and your routine.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-stethoscope fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Health</h3>
-                        <p style="padding-bottom:20px">Health will integrate itself into your physical health by collecting information on habits, body weight, height, and lifestyle. The platform will then recommend diet plans and workouts tailored to your specific needs. Health will then track your current weight, progress, and commitment to the program, providing additional motivation for users to stick with their desired lifestyle.</p>
-                    </div>
-                </div>
-                </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-usd fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Money</h3>
-                        <p style="padding-bottom:20px">ALAN’s security features allows for Money’s complete optimization. The Money application can access your secure credit card information as well as preferences, diet plans, and more from other applications to recommend budgeting proposals and smart purchase selections. You can also link your financial institution and online financial sites to truly synchronize your finances. Finally, paperless billing and banking automation working perfectly in sync.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-road fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Transit</h3>
-                        <p style="padding-bottom:20px">Utilizing top of the line mapping and GPS interfaces, Transit combines your budgetary needs, time restrictions, and preferred mode-of-transportation to provide the best option for your travel needs. Arrive at your favorite destination faster, cheaper, and easier. No more apple maps, no more stress. You’ve arrived.</p>
-                    </div>
-                </div> 
-                </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                     <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-superscript fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Calculate</h3>
-                        <p style="padding-bottom:20px">Spreadsheets will no longer be difficult to publish or work with. Publish straight from your tablet. Or your phone. Or even your television. Easy data processing at the palm of your hand.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                     <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-comments fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Communicate</h3>
-                        <p style="padding-bottom:20px">All your messaging, all in one. When you want it. With your Planner synced, Communicate will silence your calls and messages when you want to. In a meeting? Schedule it into Planner and Communicate will silence all calls and messages during that time frame. No need to put your phone on silent.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="container">
-                <div class="row">  
-                    <div class="col-md-6 text-center">
-                     <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-file fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Write</h3>
-                        <p style="padding-bottom:20px">Share your thoughts, easier. Develop internet content without developing. Write will be able to publish content to sites without the hassle of code. Finally, an easy way to blog without web development.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-music fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Media</h3>
-                        <p style="padding-bottom:20px">Movies, television, news articles, everything. All of your sources of entertainment and news in one area. Media will be able to instantly stream thousands of popular movies and television shows, as well as provide access to hundreds of news articles and videos in an easy, streamlined format.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">    
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-table fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Graph</h3>
-                        <p style="padding-bottom:20px">Create incredible graphics and diagrams, while simultaneously creating publishable web code for your website. Explain your points perfectly, easily, and quickly.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-pencil fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Draw</h3>
-                        <p style="padding-bottom:20px">Seamless photo editing for all formats of pictures. Use a professional grade photo editing application to edit your photos and then utilize automatically generated web code to easily post it to your website. Easy editing, easy publishing. Look great and share it with others.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">    
-                    <div class="col-md-6 text-center">
-                        <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-headphones fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Listen</h3>
-                        <p style="padding-bottom:20px">Music all in one. Connect to the central music database on Cuore’s servers, and have access to virtually every song. Use the mixing application within Listen to create your own music, and either keep it for your own enjoyment or post it for the world to hear. You will have access to stream anything, anywhere. All for free. Listen well.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-group fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Educate</h3>
-                        <p style="padding-bottom:20px">The perfect way for teachers and administrators to run an educational institution. Post the documents you need students to learn, post bills, all in one space. Make it easier for administration to run. Smooth administration equates to a stronger institution. Educate strong minds for our future world, easier.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">    
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-globe fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Learn</h3>
-                        <p style="padding-bottom:20px">School, made easier. High school, undergraduate, and graduate learning environments. An approved school can put tools into Educate to fully synchronize the educational experience with the student. Automatically have your class schedule put into Planner. Have your homework assignments in one convenient place. Pay your bill on time and sync with Money. Never forget another class or assignment again. Succeed easier. Learn better.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-film fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Watch</h3>
-                        <p style="padding-bottom:20px">Your all-in-one professional video editor. The easy-to-use application will have the ability to publish straight to YouTube and keep all of your video files in the same directory, with ALAN’s expansive memory space. Film away.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">    
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-microphone fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Present</h3>
-                        <p style="padding-bottom:20px">Create all types of presentations. Whether it be more fluid and creative, or structured and rigid, Present allows for you to achieve the best presentation possible. Create a business proposal presentation, or present your digital photography work in a smooth and professional fashion. The best part is, you can easily publish it to a website or send it via email for easy access when presentation time arrives. Perfect your presentation with no distractions.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-search fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Search</h3>
-                        <p style="padding-bottom:20px">Finally, a search engine more powerful than ever. Search anything and download files at faster speeds than ever before. Imagine your unaFone having faster search and download speeds than a current desktop workstation. Search and find faster.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">    
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-bullseye fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Target</h3>
-                        <p style="padding-bottom:20px">Your business management center. As a business, Target can help you set up accounts, build pages, track marketing analytics, and market your products on Cuore. Target service payments and per-subscriber (“Sync”) charges following the initial base fee for the marketing package. These are tracked through the amount of subscribers (“Synced” users) each company’s products, services, or stores are able to obtain. The Target service application is connected with Money to determine if the product being marketed fits into the targeted user’s budget, and also provides for direct e-commerce within the application.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-link fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Connect</h3>
-                        <p style="padding-bottom:20px">The perfect way to link the customer and the company. Connect allows companies to build and sell plans, such as workout and diet plans, that users can subscribe to. It also provide banks, credit card companies, or creditors to bill or loan money to people when it is needed through a secure uplink to the users’ budget, finances, assets, and credit score. Other sites will be able to link to Cuore Business, allowing Cuore users to subscribe directly to that site through their Cuore accounts, or for the site to offer their service through a Cuore application.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">    
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-book fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Publish</h3>
-                        <p style="padding-bottom:20px">The best way to make your virtual idea into reality. Print casually, professionally, or three-dimensionally. Publish is able to synchronize with virtually any printer and take on heavy printing tasks.</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                         <div class="col-lg-12 col-sm-12 vert-buffer text-center" style="padding-bottom:10px">
-                        <i class="fa fa-edit fa-3x"></i>
-                        </div>
-                        <h3 class="minimal">Design</h3>
-                        <p style="padding-bottom:20px">The best way to fully design a product to its very last detail. Using a full-fledged CAD program, you will no longer need to purchase several different applications to achieve the full design of a product. Design will also synchronize with Publish and your 3D printer to achieve a final physical product. Create products fast, easy, and to perfection.</p>
-                    </div>
-                    </div>
-                </div>    
-                
-            </div>
-    </section>
->>>>>>> FETCH_HEAD
+
+        
 
                     </div>
 
@@ -1405,7 +1231,8 @@
             </div>
         </section>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
 		<script src="js/preloader.js"></script>
         <script src="js/share.min.js"></script>

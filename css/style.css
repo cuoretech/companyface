@@ -2850,6 +2850,8 @@ iframe{border:0;}
 #sign-up-btn:hover{
     opacity: .5;
 }
+
+
 #demo-request{
     display: inline-block;
 }
@@ -2962,8 +2964,8 @@ iframe{border:0;}
     width: 80px;
     height: 80px;
     position: absolute;
-    right: -20px;
-    top: -6px;
+    right: -120px;
+    top: -9px;
     z-index: 100;
 }
 
@@ -2971,8 +2973,8 @@ iframe{border:0;}
     width: 80px;
     height: 38px;
     position: relative;
-    right: 0px;
-    top: 0px;
+    right: -140px;
+    top: -9px;
     z-index: 100;
 }
 
@@ -2999,16 +3001,16 @@ background: url('http://thecodeplayer.com/uploads/media/gs.png');
 background: linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),  url('http://thecodeplayer.com/uploads/media/gs.png');
 }
 body {
-font-family: inherit;
+font-family: 'line', arial, verdana;
 }
 /*form styles*/
-.msform {
+#msform {
 width: 400px;
 margin: 50px auto;
 text-align: center;
 position: relative;
 }
-.msform fieldset {
+#msform fieldset {
 background: white;
 border: 0 none;
 border-radius: 3px;
@@ -3021,25 +3023,25 @@ margin: 0 10%;
 position: absolute;
 }
 /*Hide all except first fieldset*/
-.msform fieldset:not(:first-of-type) {
+#msform fieldset:not(:first-of-type) {
 display: none;
 }
 /*inputs*/
-.msform input, .msform textarea {
+#msform input, #msform textarea {
 padding: 15px;
 border: 1px solid #ccc;
 border-radius: 3px;
 margin-bottom: 10px;
 width: 100%;
 box-sizing: border-box;
-font-family: inherit;
-color: #2A2828;
+font-family: 'line';
+color: #A90D15;
 font-size: 13px;
 }
 /*buttons*/
-.msform .action-button {
+#msform .action-button {
 width: 100px;
-background: #2A2828;
+background: #A90D15;
 font-weight: bold;
 color: white;
 border: 0 none;
@@ -3047,29 +3049,17 @@ border-radius: 1px;
 cursor: pointer;
 padding: 10px 5px;
 margin: 10px 5px;
+right:0px;
+top: inherit;
 }
-
-.action-button{
-    text-align: center;
-    width: 100px;
-    background: #2A2828;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 1px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px;
-}
-
-.msform .action-button:hover, #msform .action-button:focus {
-box-shadow: 0 0 0 2px white, 0 0 0 3px #2A2828;
+#msform .action-button:hover, #msform .action-button:focus {
+box-shadow: 0 0 0 2px white, 0 0 0 3px #A90D15;
 }
 /*headings*/
 .fs-title {
 font-size: 15px;
 text-transform: uppercase;
-color: #2A2828;
+color: #A90D15;
 margin-bottom: 10px;
 }
 .fs-subtitle {
@@ -3079,8 +3069,8 @@ color: #666;
 margin-bottom: 20px;
 }
 /*progressbar*/
-.progressbar {
-margin-bottom: 20px;
+#progressbar {
+margin-bottom: 15px;
 overflow: hidden;
 /*CSS counters to number the steps*/
 counter-reset: step;
@@ -3091,7 +3081,7 @@ counter-reset: step;
 }
 
 
-.progressbar li {
+#progressbar li {
 list-style-type: none;
 color: white;
 text-transform: uppercase;
@@ -3100,7 +3090,7 @@ width: 33.33%;
 float: left;
 position: relative;
 }
-.progressbar li:before {
+#progressbar li:before {
 content: counter(step);
 counter-increment: step;
 width: 20px;
@@ -3113,7 +3103,7 @@ border-radius: 3px;
 margin: 0 auto 5px auto;
 }
 /*progressbar connectors*/
-.progressbar li:after {
+#progressbar li:after {
 content: '';
 width: 100%;
 height: 2px;
@@ -3123,16 +3113,17 @@ left: -50%;
 top: 9px;
 z-index: -1; /*put it behind the numbers*/
 }
-.progressbar li:first-child:after {
+#progressbar li:first-child:after {
 /*connector not needed before the first step*/
 content: none;
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-.progressbar li.active:before, #progressbar li.active:after {
-background: #2A2828;
+#progressbar li.active:before, #progressbar li.active:after {
+background: #A90D15;
 color: white;
 }
+
 
 .login-logo{
     max-width: 250px;
