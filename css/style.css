@@ -2960,27 +2960,27 @@ iframe{border:0;}
     z-index: 100;
 }
 
-.login-close a{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    right: -120px;
-    top: -9px;
-    z-index: 100;
-}
 
 .signup-close {
     width: 80px;
     height: 38px;
     position: relative;
-    right: -230px;
-    top: -22px;
+    right: -150px;
+    top: -19px;
     z-index: 100;
+    cursor: pointer;
+    color:#A90D15;
+}
+
+.signup-close :hover{
+    opacity:.3;
 }
 
 .login {
     cursor:pointer;
 }
+
+
 
 .menu-overlay-close .login-close img{
     cursor:pointer;
