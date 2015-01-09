@@ -15,7 +15,7 @@ $(".signup-close").click(function () {
           $( "body" ).removeClass( "noscroll" )
        });
 
-$("#signup").click(function () {
+$(".signup").click(function () {
           $(".signup-overlay").slideDown(750);
           $( "body" ).addClass( "noscroll" );
        });
