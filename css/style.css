@@ -3179,6 +3179,10 @@ color: white;
   background: #990000;
 }
 
+.frame ul li.active i{
+    color:#cccccb;
+}
+
 /* Scrollbar */
 .scrollbar {
   margin: 0 0 1em 0;
@@ -3228,6 +3232,8 @@ color: white;
     color:#fff;
 }
 
+
+
 #socialz{
     z-index: -1;
 }
@@ -3236,3 +3242,11 @@ color: white;
     color:#A90D15;
 }
 
+.clearfix a:hover{
+    opacity:.7;
+}
+
+.clearfix a:active{
+    color:black;
+    z-index: 1000;
+}
