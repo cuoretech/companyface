@@ -68,7 +68,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+                    <div class="mobile-nav collapse navbar-collapse navbar-right" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="active"><a class="signup login">Login</a></li>
                             <li><a data-scroll href="#process">Products</a></li>
@@ -111,7 +111,7 @@
           </ul>
           <!-- fieldsets -->
           <fieldset>
-            <i class="fa fa-times signup-close login-close"></i>
+            <i class="fa fa-times fa-2x signup-close login-close"></i>
             <div>
             <img src="images/logo.png">
             </div>
@@ -123,7 +123,7 @@
             <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <fieldset>
-            <i class="fa fa-times login-close signup-close"></i>
+            <i class="fa fa-times fa-2x login-close signup-close"></i>
             <div>
             <img src="images/logo.png">
             </div>
@@ -136,7 +136,7 @@
             <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <fieldset>
-            <i class="fa fa-times login-close signup-close"></i>
+            <i class="fa fa-times fa-2x login-close signup-close"></i>
             <div>
             <img src="images/logo.png">
             </div>
@@ -160,7 +160,7 @@
         <form id="msform">
           <!-- fieldsets -->
           <fieldset>
-            <i class="fa fa-times signup-close"></i>
+            <i class="fa fa-times fa-2x signup-close"></i>
             <div>
             <img src="images/logo.png">
             </div>
@@ -169,11 +169,31 @@
             <input type="text" name="fname" placeholder="Email" required />
             <input type="text" name="lname" placeholder="Password" required />
             <input type="submit" name="submit" class="submit action-button signup-close" value="Login" />
-            <a href="forgotpassword.html"><h3 class="fs-subtitle">Forgot Your Password?</h3></a>
+            <a class="forgotpassword"><h3 class="fs-subtitle">Forgot Your Password?</h3></a>
           </fieldset>
         </form>
     </div>
   </div>
+</div>
+<div class="forgotpassword-overlay">
+    <div class="menu-content">
+        <div class="row forgotpassword-overlay">
+    <!-- multistep form -->
+            <form id="msform">
+              <!-- fieldsets -->
+              <fieldset>
+                <a class="forgotpassword-close"><i class="fa fa-times fa-2x"></i></a>
+                <div>
+                <img src="images/logo.png">
+                </div>
+                <h2 class="fs-title">Retrieve Your Password</h2>
+                <h3 class="fs-subtitle">Enter your email</h3>
+                <input type="text" name="fname" placeholder="Email" required />
+                <a class="forgotpassword-close"><input type="submit" name="submit" class="submit action-button" value="Submit" /></a>
+              </fieldset>
+            </form>
+        </div>
+    </div>
 </div>
 
         <!--end overlay for the login screen-->
@@ -224,7 +244,6 @@
 
 
             </div>
-
         </section>
 
 
@@ -338,8 +357,8 @@
                             </nav>
                             <div class="content-wrap">
                                 <section id="section-iconfall-1">
-                                    <div class="col-md-offset-3 col-md-4 col-md-12 text-center">
-                                    <img style="max-width:500px" class="img-responsive" src="images/alan copy.png">
+                                    <div class="col-md-offset-3 col-md-4 col-sm-12 text-center">
+                                    <img style="max-width:500px" class="img-responsive" src="images/ALAN_Logo.png">
                                     </div>
                                     <div class="col-md-offset-2 col-md-8 text-center">
                                         <p class="minimal">
@@ -355,8 +374,8 @@
                                     </div>
                                 </section>
                                 <section id="section-iconfall-2">
-                                 <div class="col-md-offset-2 col-md-4 col-md-12">
-                                    <img style="max-width:716px" class="img-responsive" src="images/luscios.png">
+                                 <div class="col-md-offset-2 col-md-8 col-sm-12 text-center" style="padding-left: 115px;">
+                                    <img style="max-width:500px" class="img-responsive" src="images/luscios_logo.png">
                                     </div>
                                     <div class="col-md-offset-2 col-md-8 text-center">
                                         <p class="minimal">
@@ -372,6 +391,9 @@
                                 </section>
                                 <section id="section-iconfall-3">
                                 <div class="row">
+                                <div class="col-md-offset-2 col-md-8 col-sm-12 text-center" style="padding-left: 115px;">
+                                    <img style="max-width:500px" class="img-responsive" src="images/CEP_Logo.png">
+                                    </div>
                                     <div class="col-md-6 text-center">
                                         <div class="col-lg-12 col-sm-12 vert-buffer text center" style="margin-top: 20px">
                                         <img style="margin-left:235px" class="img-responsive text center" src="images/light59White.png">
@@ -409,10 +431,11 @@
                                 </section>
                                 <section id="section-iconfall-4">
                                     <div class="row">
+                                    <div class="col-md-offset-2 col-md-8 col-sm-12 text-center" style="padding-left: 115px;">
+                                    <img style="max-width:500px" class="img-responsive" src="images/unaSeries_logo.png">
+                                    </div>
                                         <div class="col-md-offset-1 col-md-7">
-                                            <h3 class="minimal">
-                                            UnaTone
-                                            </h3>
+                                            <img style="max-width:300px;" class="img-responsive" src="images/unaTone_logo.png"><br>
                                               <p class="minimal">A home audio system like no other. unaTone is a set of high quality speakers that connects via WiFi for HiFi Audio Quality. Through Cuore’s SoundShack application, you are able to connect to your speakers in a different way than ever before. unaTone’s Simultaneous Multipoint allows for you to connect to different speakers in the set, playing different audio from different devices, simultaneously. One person could be playing music outside with a speaker set, another in the house watching a movie with another speaker set. Everyone can listen to what they want to. unaTone also comes with Electro Permanent Magnets with Wireless charging mounts to charge your speakers. unaTone’s mount will be able to not only mount your speakers to the wall magnetically, but also simultaneously charge them. Electro Permanent Magnets will securely fasten your speakers to the mount through the push of a button on Soundshack. Speakers are all wireless with up to 15 hours of battery life. unaTone speakers are also all indoor/outdoor compatible. Take it wherever you need to go. Use it for whatever you need. Complete ease of use, compatibility, and professional quality. Available soon.</p>
                                         </div>
                                         <div class="col-md-4">
@@ -422,9 +445,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-offset-1 col-md-7">
-                                         <h3 class="minimal">
-                                            UnaPhone
-                                            </h3>
+                                         <img style="max-width:300px;" class="img-responsive" src="images/unaPhone_logo.png"><br>
                                             <h2 class="white">The Beauty</h2>
                                             <p class="minimal">The most revolutionary phone on the market. Combining ALAN’s power and the sleek nature of lusciOS, unaPhone is the first of many similar new technologies to reach the market. Its new 4k screen makes pixels on a phone look unreal. You can now watch the videos in 4K definition virtually anywhere with wireless connection.</p>
                                             <h2 class="white">The Power</h2>
@@ -440,9 +461,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-offset-1 col-md-7">
-                                        <h3 class="minimal">
-                                            UnaVision
-                                            </h3>
+                                        <img style="max-width:300px;" class="img-responsive" src="images/unaVision_logo.png"><br>
                                             <h2 class="white">unaVision: The Lightweight Champion</h2>
                                             <p class="minimal">With the next-generation of 4K just around the corner, unaVision is able to take the incredible high definition quality of 4K and combine it with sleek and thin nature. With a slim design using super-thin aluminum bezel, unaVision becomes the lightweight TV champion. It will knock out any other television of its size and pixelation, not only because of its design, but because of its power. unaVision dualed with ALAN server makes it the most powerful television, ever.</p>
                                         </div>
@@ -453,9 +472,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-offset-1 col-md-7">
-                                            <h3 class="minimal">
-                                            UnaBook
-                                            </h3>
+                                            <img style="max-width:300px;" class="img-responsive" src="images/unaBook_logo.png"><br>
                                             <p class="minimal">Your next generation tablet with 4K technology that can function stronger and longer than any other tablet on the market. Going on a flight? Never worry about losing battery life in the middle of a movie. Working on a project? Finish it on the go with unaBook. Beauty and reliability collide in an incredible tablet that is sure to make your life much easier.</p>
                                         </div>
                                         <div class="col-md-4">
@@ -726,7 +743,7 @@
                 </div>
             </div>
     </section> -->
-    <section id="apps" class="wrap">
+    <section id="apps servicesContent" class="wrap">
         <div class="wrap">
             <div class="scrollbar">
                 <div class="handle">
@@ -873,7 +890,7 @@
         <div class="toggle-publish publish-append col-md-12 text-center appendstyle">
             <h1 class="publish appendstyle">Publish</h1>
                 <div class="col-md-offset-2 col-md-8 text-center">
-                <p style="padding-bottom:20px;">he best way to make your virtual idea into reality. Print casually, professionally, or three-dimensionally. Publish is able to synchronize with virtually any printer and take on heavy printing tasks.</p>
+                <p style="padding-bottom:20px;">The best way to make your virtual idea into reality. Print casually, professionally, or three-dimensionally. Publish is able to synchronize with virtually any printer and take on heavy printing tasks.</p>
                 </div>
         </div>
         <div class="toggle-design design-append col-md-12 text-center appendstyle">
@@ -951,9 +968,9 @@
 
                     <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
                         <i class="icon-envelope"></i>
-                        <p>leo@cuore.io<br>
-                            kevin@cuore.io<br>
-                            thomas@cuore.io
+                        <p><a href="mailto:leo@cuore.io">leo@cuore.io</a><br>
+                            <a href="mailto:kevin@cuore.io">kevin@cuore.io</a><br>
+                            <a href="mailto:thomas@cuore.io">thomas@cuore.io</a>
                             </p>
                     </div>
                 </div>
@@ -969,7 +986,7 @@
 
             <div class="topLine text-center">
 
-                <div class="backToTop">
+                <div class="backToTop tagline">
                     <a data-scroll="" href="#intro">
                         <i class="fa fa-angle-double-up"></i><br>
                         <h5>SYNC YOUR WORLD</h5>
@@ -977,10 +994,11 @@
                 </div>
 
                 <ul class="footerSocialIcons">
-                    <li><a href="https://www.facebook.com/cuoretechnology"><i class="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a href="https://twitter.com/CuoreTech"><i class="fa fa-twitter fa-2x"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/2299355?trk=tyah&trkInfo=tarId%3A1418698170511%2Ctas%3Acuore%20technolog%2Cidx%3A2-1-6"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="https://plus.google.com/+CuoreIo"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                    <li><a class="facebook-icon" href="https://www.facebook.com/cuoretechnology"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a class="twitter-icon" href="https://twitter.com/CuoreTech"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a class="linkedin-icon" href="https://www.linkedin.com/company/2299355?trk=tyah&trkInfo=tarId%3A1418698170511%2Ctas%3Acuore%20technolog%2Cidx%3A2-1-6"><i class=" fa fa-linkedin fa-2x"></i></a></li>
+                    <li><a class="googleplus-icon" href="https://plus.google.com/+CuoreIo"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                    <!-- <li><a class="github-icon" href="https://github.com/cuoretech"><i class-"fa fa-github fa-2x"></i></a></li> -->
                 </ul>
             </div>
 

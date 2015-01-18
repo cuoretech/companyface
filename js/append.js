@@ -224,7 +224,7 @@ $(".close-connect").click(function () {
 
 $(function () {
 $("#publish").click(function () {
-		$(".toggle-connect").toggle(function () {
+		$(".toggle-publish").toggle(function () {
 			$(".publish").slideDown(750);
 		});
 	});

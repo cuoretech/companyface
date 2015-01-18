@@ -79,6 +79,7 @@ section .container{
 .row{
     z-index:3;
     position:relative;
+    margin-top: -20px;
 }
 
 .preloaderLogo{
@@ -296,7 +297,7 @@ background: #222;
 }
 
 .affix{
-    background-color: #2A2828;
+    background-color: rgba(47, 47, 47, 0.9);
     padding-top:5px;
     padding-bottom:5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -314,11 +315,11 @@ background: #222;
 
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #2A2828;
+    background-color: #fff;
 }
 
 .affix.navbar-default .navbar-toggle .icon-bar {
-    background-color: #282828;
+    background-color: #fff;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
@@ -821,7 +822,7 @@ h3 small, h4 small, h5 small{
 /*<!--Intro -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#intro{background-color: #2A2828;}
+#intro{background-color: #2F2F2F;}
 
 #intro h1, #intro p, #intro h1.minimal small{
     color:white;
@@ -953,7 +954,7 @@ h3 small, h4 small, h5 small{
 }
 
 #text-separator-clients{
-    background-color: black;
+    background-color: #555;
     overflow:hidden;
 }
 
@@ -1321,11 +1322,11 @@ h3 small, h4 small, h5 small{
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
 #servicesIntro{
-    background-color: #555;
+    background-color: #2F2F2F;
 }
 
 #servicesContent{
-    background-color: #CCCCCC;
+    background-color: #2F2F2F;
 }
 
 #servicesContent .container{
@@ -1333,6 +1334,9 @@ h3 small, h4 small, h5 small{
     padding-top:60px;
 }
 
+#servicesContent .wrap{
+    background-color: #2f2f2f
+}
 
 #servicesIntro .container{
     padding-top:75px;
@@ -1473,7 +1477,7 @@ h3 small, h4 small, h5 small{
 /*process*/
 
 #process{
-    background: #2A2828;
+    background: #2F2F2F;
     background-repeat: repeat;
     background-position: center center;
 }
@@ -2943,6 +2947,17 @@ iframe{border:0;}
     overflow-y: scroll;
 }
 
+.forgotpassword-overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:3000;
+    background: #454545;
+    overflow-y: scroll;
+}
 .menu-overlay-section{
     position: fixed;
 }
@@ -2969,14 +2984,14 @@ iframe{border:0;}
     width: 80px;
     height: 38px;
     position: relative;
-    right: -150px;
-    top: -19px;
+    right: -142px;
+    top: -15px;
     z-index: 100;
     cursor: pointer;
     color:#A90D15;
 }
 
-.signup-close :hover{
+.signup-close a:hover{
     opacity:.3;
 }
 
@@ -3032,7 +3047,7 @@ display: none;
 }
 /*inputs*/
 #msform input, #msform textarea {
-padding: 15px;
+padding: 6px;
 border: 1px solid #ccc;
 border-radius: 3px;
 margin-bottom: 10px;
@@ -3040,7 +3055,7 @@ width: 100%;
 box-sizing: border-box;
 font-family: 'line';
 color: #A90D15;
-font-size: 13px;
+font-size: 14px;
 }
 /*buttons*/
 #msform .action-button {
@@ -3051,8 +3066,6 @@ color: white;
 border: 0 none;
 border-radius: 1px;
 cursor: pointer;
-padding: 10px 5px;
-margin: 10px 5px;
 right:0px;
 top: inherit;
 }
@@ -3145,9 +3158,13 @@ color: white;
   line-height: 1.2 !important;
 }
 
+#apps {
+    background-color: #2F2F2F;
+}
+
 .wrap {
   position: relative;
-  margin: 3em 0;
+  background-color: #2F2F2F;
 }
 
 /* Frame */
@@ -3219,7 +3236,7 @@ color: white;
 
 .appendstyle{
     width: 100%;
-    background-color: #333;
+    background-color: #2F2F2F;
     color:#a90d15;
     border: none;
     padding: 1%;
@@ -3249,4 +3266,29 @@ color: white;
 .clearfix a:active{
     color:black;
     z-index: 1000;
+}
+
+/*Social Icons Hover*/
+.facebook-icon :hover{
+    color:#3b5998;
+}
+
+.twitter-icon :hover{
+    color:#0084b4;
+}
+
+.linkedin-icon :hover{
+    color:#0077B5;
+}
+
+.googleplus-icon :hover{
+    color:#dd4b39;
+}
+
+.github-icon :hover{
+    color:#4183c4;
+}
+
+.tagline a:hover{
+    color:#a90d15;
 }
