@@ -3292,3 +3292,16 @@ color: white;
 .tagline a:hover{
     color:#a90d15;
 }
+
+/*wave*/
+canvas {
+    display: inherit;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1000;
+}
+
+.intro-z {
+    z-index: 2000;
+}

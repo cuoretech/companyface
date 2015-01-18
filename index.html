@@ -70,12 +70,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="mobile-nav collapse navbar-collapse navbar-right" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a class="signup login">Login</a></li>
+<!--                             <li class="active"><a class="signup login">Login</a></li> -->
+                            <li class="active"><a data-scroll href="#intro">Home</a></li>
                             <li><a data-scroll href="#process">Products</a></li>
                             <li><a data-scroll href="#servicesIntro">Applications</a></li>
                             <li><a data-scroll href="#text-separator-clients">Partners</a></li>
                             <li><a data-scroll href="#contactIntro">Contact</a></li>
-                            <li><a id="login" class="login overlay-ajax navoverlay">Sign Up</a></li>
+<!--                             <li><a id="login" class="login overlay-ajax navoverlay">Sign Up</a></li> -->
                         </ul>
 
                     </div><!-- /.navbar-collapse -->
@@ -204,14 +205,33 @@
         <section id="intro">
             <div class="container valign">
                 <div class="row">
-                    <div class="col-md-12">
+                    <script src="js/siriwave.js"></script>
+                    <script>
+                        var SW = new SiriWave({
+                            width: window.innerWidth,
+                            height: window.innerHeight - 40,
+                            color: '#FFF',
+                            frequency: 6,
+                            speed: 0.03,
+                            amplitude: 0.18,
+                            autostart: true,
+                        });
+                        ['amplitude','speed','frequency'].forEach(function(p){
+                            document.getElementById(p).addEventListener('input', function(){
+                                document.getElementById(p+'-val').innerText = this.value;
+                                SW[p] = +this.value;
+                            });
+                        });
+                    </script>
+                    <div class="col-md-12 intro-z">
                         <img src="images/companylogoWhite.png" class="img-responsive center-block introLogo" alt="Intro Logo">
                     </div>
-                    <div class="col-md-offset-2 col-md-8 text-center">
+                    <div class="col-md-offset-2 col-md-8 text-center intro-z">
                         <h1>Sync Your World</h1>
                     </div>
                 </div>
             </div>
+
         </section>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* END Intro  */-->
@@ -241,7 +261,6 @@
                     </div>
                 </div>
                 <!--end header-->
-
 
             </div>
         </section>
@@ -1098,5 +1117,6 @@
         }
         });
         </script>
+
 	</body>
 </html>
