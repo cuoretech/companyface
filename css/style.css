@@ -478,6 +478,7 @@ h2.red{
     letter-spacing:3px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    color: #fff;
 }
 
 .sectionIntro h1.minimal{
@@ -2248,7 +2249,7 @@ h3 small, h4 small, h5 small{
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
 #contactIntro{
-    background-color: #DBDBDB;
+    background-color: #2F2F2F;
 }
 
 #contactContent{
@@ -2336,6 +2337,16 @@ label input, textarea{
 
 .contactInfo1 p{
     padding-top:15px;
+    color: #fff;
+}
+
+.contactInfo1 a{
+    padding-top:15px;
+    color: #fff;
+}
+
+.contactInfo1 a:active{
+    opacity:.3;
 }
 
 .contactInfo1{
@@ -2348,6 +2359,7 @@ label input, textarea{
 
 .contactInfo1 i{
     font-size:30px;
+    color: #fff;
 }
 
 #googleMap {
@@ -2365,7 +2377,7 @@ label input, textarea{
 
 
 .topLine{
-    background:#2A2828;
+    background:#2F2F2F;
     padding:50px 0;
 }
 
