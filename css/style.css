@@ -3191,7 +3191,7 @@ color: white;
   text-align: center;
   cursor: pointer;
 }
-.frame ul li.active {
+.frame ul li.active{
   color: #999;
   background: #990000;
 }
@@ -3247,6 +3247,16 @@ color: white;
 .appendstyle p{
     font-size: 20px;
     color:#fff;
+}
+
+.videostyle{
+    width: 100%;
+    background-color: #2F2F2F;
+    color:#a90d15;
+    border: none;
+    padding: 1%;
+    display: none;
+    z-index: 3000;
 }
 
 

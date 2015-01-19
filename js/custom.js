@@ -472,7 +472,24 @@ $(".submit").click(function(){
 /*end stepform*/
 
 /*youtube*/
+
     $(function () {
       $(".youtube").YouTubeModal({autoplay:0, width:640, height:360});
+    });
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
 /*end youtube*/

@@ -13,7 +13,7 @@
         <meta name="keyword" content="technology, cuore, hardware, software">
 
         <!-- //// iICON \\\\ -->
-        <link rel="SHORTCUT ICON" href="images/favicon.ico" />
+        <link rel="icon" type="image/ico" href="favicon.ico" />
         <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
@@ -71,11 +71,11 @@
                     <div class="mobile-nav collapse navbar-collapse navbar-right" id="navbar-collapse">
                         <ul class="nav navbar-nav">
 <!--                             <li class="active"><a class="signup login">Login</a></li> -->
-                            <li class="active"><a data-scroll href="#intro">Home</a></li>
-                            <li><a data-scroll href="#process">Products</a></li>
-                            <li><a data-scroll href="#servicesIntro">Applications</a></li>
-                            <li><a data-scroll href="#text-separator-clients">Partners</a></li>
-                            <li><a data-scroll href="#contactIntro">Contact</a></li>
+                            <li class="active"><a data-scroll data-scroll-nav="home" href="#intro">Home</a></li>
+                            <li><a data-scroll data-scroll-nav="products" href="#process">Products</a></li>
+                            <li><a data-scroll data-scroll-nav="applications" href="#servicesIntro">Applications</a></li>
+                            <li><a data-scroll data-scroll-nav="partners" href="#text-separator-clients">Partners</a></li>
+                            <li><a data-scroll data-scroll-nav="contact" href="#contactIntro">Contact</a></li>
 <!--                             <li><a id="login" class="login overlay-ajax navoverlay">Sign Up</a></li> -->
                         </ul>
 
@@ -197,12 +197,13 @@
     </div>
 </div>
 
+
         <!--end overlay for the login screen-->
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Intro  */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section id="intro">
+        <section id="intro" data-scroll-index="home">
             <div class="container valign">
                 <div class="row">
                     <script src="js/siriwave.js"></script>
@@ -223,14 +224,21 @@
                             });
                         });
                     </script>
-                    <div class="col-md-12 intro-z">
+                    <div class="col-md-12 intro-z" style="padding-bottom: 100px;">
                         <img src="images/companylogoWhite.png" class="img-responsive center-block introLogo" alt="Intro Logo">
                     </div>
                     <div class="col-md-offset-2 col-md-8 text-center intro-z">
                         <h1>Sync Your World</h1>
+                        <!-- <a id="video"><img style="max-width:50px; padding-top:25px;" src="images/play.png"/></a> -->
                     </div>
                 </div>
             </div>
+<!--video-->
+<div class="video-overlay videostyle">
+    <div class="col-md-offset-3 col-md-6 text-center">
+        <h1>hello</h1>
+    </div>
+</div>
 
         </section>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -350,7 +358,7 @@
 
         
 
-        <section id="process" data-stellar-background-ratio="0.1">
+        <section id="process" data-scroll-index="products" data-stellar-background-ratio="0.1">
             <div class="container">
 
                 <div class="row sectionIntro">
@@ -442,11 +450,11 @@
                                         </div>
                                         </div>      
                                     </div>
-                                    <div class="text-center">
+<!--                                     <div class="text-center">
                                     <form id="syncform">
                                     <input type="submit" class="signup submit btn btn-default btn-black" id="submit" value="Log In to SYNCFORM">
                                     </form>
-                                    </div>
+                                    </div> -->
                                 </section>
                                 <section id="section-iconfall-4">
                                     <div class="row">
@@ -512,7 +520,7 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* TEXT SEPARATOR */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section id="text-separator-clients" >
+        <section id="text-separator-clients" data-scroll-index="partners">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 clientsIntro text-center">
@@ -554,7 +562,7 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* services SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section id="servicesIntro">
+        <section id="servicesIntro" data-scroll-index="applications">
 
             <div class="container">
 
@@ -772,26 +780,26 @@
             <div class="frame" id="centered">
                 <ul class="clearfix">
 <!--                     <a id="home"><li><i class="fa fa-home"></i></li></a> -->
-                    <li><a id="planner" class="close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-calendar"></i></a></li>
-                    <li><a id="health" class="close-planner close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-stethoscope"></i></a></li>
-                    <li><a id="money" class="close-planner close-health close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-usd"></i></a></li>
-                    <li><a id="transit" class="close-planner close-health close-money close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-road"></i></a></li>
-                    <li><a id="calculate" class="close-planner close-health close-money close-transit close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-superscript"></i></a></li>
-                    <li><a id="communicate" class="close-planner close-health close-money close-transit close-calculate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-comments"></i></a></li>
-                    <li><a id="write" class="close-planner close-health close-money close-transit close-calculate close-communicate close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-file"></i></a></li>
-                    <li><a id="media" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-music"></i></a></li>
-                    <li><a id="graph" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-table"></i></a></li>
-                    <li><a id="draw" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-pencil"></i></a></li>
-                    <li><a id="listen" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-headphones"></i></a></li>
-                    <li><a id="educate" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-group"></i></a></li>
-                    <li><a id="watch" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-film"></i></a></li>
-                    <li><a id="present" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-search close-target close-connect close-publish close-design"><i class="fa fa-microphone"></i></a></li>
-                    <li><a id="learn" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-globe"></i></a></li>
-                    <li><a id="search" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-target close-connect close-publish close-design"><i class="fa fa-search"></i></a></li>
-                    <li><a id="target" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-connect close-publish close-design"><i class="fa fa-bullseye"></i></a></li>
-                    <li><a id="connect" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-publish close-design"><i class="fa fa-link"></i></a></li>
-                    <li><a id="publish" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-design"><i class="fa fa-book"></i></a></li>
-                    <li><a id="design" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish"><i class="fa fa-edit"></i></a></li>
+                    <li id="planner" class="close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-calendar"></i></li>
+                    <li id="health" class="close-planner close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-stethoscope"></i></li>
+                    <li id="money" class="close-planner close-health close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-usd"></i></li>
+                    <li id="transit" class="close-planner close-health close-money close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-road"></i></li>
+                    <li id="calculate" class="close-planner close-health close-money close-transit close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-superscript"></i></li>
+                    <li id="communicate" class="close-planner close-health close-money close-transit close-calculate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-comments"></i></li>
+                    <li id="write" class="close-planner close-health close-money close-transit close-calculate close-communicate close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-file"></i></li>
+                    <li id="media" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-music"></i></li>
+                    <li id="graph" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-table"></i></li>
+                    <li id="draw" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-pencil"></i></li>
+                    <li id="listen" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-educate close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-headphones"></i></li>
+                    <li id="educate" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-learn close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-group"></i></li>
+                    <li id="watch" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-film"></i></li>
+                    <li id="present" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-search close-target close-connect close-publish close-design"><i class="fa fa-microphone"></i></li>
+                    <li id="learn" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-watch close-present close-search close-target close-connect close-publish close-design"><i class="fa fa-globe"></i></li>
+                    <li id="search" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-target close-connect close-publish close-design"><i class="fa fa-search"></i></li>
+                    <li id="target" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-connect close-publish close-design"><i class="fa fa-bullseye"></i></li>
+                    <li id="connect" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-publish close-design"><i class="fa fa-link"></i></li>
+                    <li id="publish" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-design"><i class="fa fa-book"></i></li>
+                    <li id="design" class="close-planner close-health close-money close-transit close-calculate close-communicate close-write close-media close-graph close-draw close-listen close-educate close-learn close-watch close-present close-search close-target close-connect close-publish"><i class="fa fa-edit"></i></li>
                 </ul>
             </div>
                 <!-- append -->
@@ -1055,6 +1063,12 @@
         <script src="js/sly.js"></script>
         <script src="js/horizontal.js"></script>
         <script src="js/append.js"></script>
+        <script src="js/videomodal.min.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            smoothScroll.init();
+        </script>
         <!--end example scripts-->
         <script>
             $(function(){
