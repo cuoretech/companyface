@@ -26,13 +26,11 @@ Cuore CompanyFace is made available by [Cuore Technology](http://cuore.io) and a
 
 -----------------------
 
-*   Frontend UI Developer: [Leo Schultz](https://github.com/Leeboy6610)
-*	Frontend UI Developer: [Thomas Hessler](https://github.com/thessler27)
-*   UI Designer: [Tanner Jourdian](https://github.com/)
-*   Backend Developer: [Bryan Clark](https://github.com/BryanDClark)
-*   Backend Developer: [Akshay Gadegone](https://github.com/AkshayGadegone)
-*   Backend Developer: [Guilherme Carvalho](https://github.com/guigacarvalho)
-*   Backend Developer: [Vivek Bharathij](https://github.com/vivekbharathij)
+*   Frontend UI Developer: [Leo Schultz](https://github.com/leorue)
+*	Fullstack Developer: [Thomas Hessler](https://github.com/thessler27)
+*	Junior Developer: [Kevin Ryan](https://github.com/kevryan2)
+*   UI Designer: [Tanner Jourdian](https://github.com/search?q=tanner+jourdian&type=Users&utf8=%E2%9C%93)
+
 
 Architecture
 ===========
